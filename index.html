@@ -1,0 +1,1035 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Synth Media Agency — Creative, Digital &amp; Technology</title>
+  <meta name="description"
+    content="Synth Media Agency combines creative strategy, digital marketing, content, web development and technology to help ambitious brands become more visible, memorable and effective online.">
+  <meta name="keywords"
+    content="Creative Agency, Digital Marketing, Technology Solutions, Web Development, Brand Strategy, Content Creation, Nigeria, Global">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://synthmediaagency.com/">
+
+  <!-- Open Graph / Social Metadata -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Synth Media Agency — Creative × Digital × Technology">
+  <meta property="og:description"
+    content="We make brands visible, help them grow and build the technology behind them. Be globally seen.">
+  <meta property="og:image" content="assets/images/general/hero-visual.svg">
+  <meta property="twitter:card" content="summary_large_image">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            synthWhite: '#ffffff',
+            synthCard: '#ffffff',
+            synthBorder: '#e5e5e5',
+          },
+          fontFamily: {
+            heading: ['Space Grotesk', 'sans-serif'],
+            body: ['Inter', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- Lenis & GSAP Libraries -->
+  <script src="https://unpkg.com/lenis@1.1.9/dist/lenis.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="styles.css?v=4">
+</head>
+
+<body class="bg-white text-black antialiased selection:bg-black selection:text-white">
+
+  <!-- Noise Texture Overlay -->
+  <div class="bg-noise"></div>
+
+  <!-- Page Loader -->
+  <div id="page-loader" class="page-loader bg-white text-black">
+    <div class="text-center space-y-3">
+      <div class="flex items-center justify-center gap-3">
+        <img src="assets/images/general/synth-logo.svg" alt="Synth Logo" class="w-10 h-10 text-black">
+        <span class="font-heading text-3xl font-extrabold tracking-tight text-black">SYNTH<span
+            class="text-zinc-400">.</span></span>
+      </div>
+      <div class="text-[10px] font-mono tracking-widest text-black uppercase font-bold">CREATIVE × DIGITAL × TECHNOLOGY
+      </div>
+    </div>
+  </div>
+
+  <!-- Sticky Navigation Header (ALWAYS PURE WHITE) -->
+  <header class="site-header py-5 px-6 md:px-12 bg-white text-black border-b border-zinc-200">
+    <div class="max-w-7xl mx-auto flex items-center justify-between">
+      <!-- Left: Logo with Icon -->
+      <a href="#" class="group flex items-center gap-3 text-xl font-bold font-heading tracking-tight text-black">
+        <img src="assets/images/general/synth-logo.svg" alt="Synth Logo"
+          class="w-7 h-7 text-black group-hover:scale-110 transition-transform">
+        <span class="text-black font-extrabold">SYNTH<span class="text-zinc-400">.</span></span>
+      </a>
+
+      <!-- Center/Right: Desktop Navigation -->
+      <nav class="hidden md:flex items-center gap-8 text-xs font-bold uppercase tracking-widest text-black">
+        <a href="#work" class="nav-link">Work</a>
+        <a href="#services" class="nav-link">Services</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#process" class="nav-link">Process</a>
+        <a href="#technology" class="nav-link">Tech</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <!-- Far Right CTA -->
+      <div class="hidden md:flex items-center gap-4">
+        <a href="#contact" class="gradient-btn px-5 py-2.5 text-xs">
+          LET'S TALK
+        </a>
+      </div>
+
+      <!-- Mobile Hamburger Toggle -->
+      <button id="mobile-menu-toggle"
+        class="md:hidden text-black bg-white border border-zinc-300 p-2.5 hover:bg-black hover:text-white transition-colors"
+        aria-label="Toggle Navigation Menu">
+        <i data-lucide="menu" class="w-6 h-6 stroke-[2.5]"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Fullscreen Navigation Overlay (100% PURE WHITE) -->
+  <div id="mobile-menu-overlay" class="mobile-menu-overlay bg-white text-black">
+    <div class="flex justify-between items-center mb-8 border-b border-zinc-200 pb-4">
+      <div class="flex items-center gap-3">
+        <img src="assets/images/general/synth-logo.svg" alt="Synth Logo" class="w-7 h-7 text-black">
+        <span class="font-heading font-bold text-xl text-black">SYNTH.</span>
+      </div>
+      <button id="mobile-menu-close"
+        class="text-black bg-white border border-zinc-300 p-2.5 hover:bg-black hover:text-white transition-colors"
+        aria-label="Close Menu">
+        <i data-lucide="x" class="w-6 h-6 stroke-[2.5]"></i>
+      </button>
+    </div>
+    <div class="flex flex-col gap-6 text-3xl font-heading font-extrabold uppercase text-black">
+      <a href="#work" class="text-black hover:text-zinc-600 transition-colors">WORK</a>
+      <a href="#services" class="text-black hover:text-zinc-600 transition-colors">SERVICES</a>
+      <a href="#about" class="text-black hover:text-zinc-600 transition-colors">ABOUT</a>
+      <a href="#process" class="text-black hover:text-zinc-600 transition-colors">PROCESS</a>
+      <a href="#technology" class="text-black hover:text-zinc-600 transition-colors">TECHNOLOGY</a>
+      <a href="#contact" class="text-black hover:text-zinc-600 transition-colors">CONTACT</a>
+    </div>
+    <div class="mt-auto pt-8 border-t border-zinc-200 space-y-4">
+      <a href="https://wa.me/2348110923670" target="_blank" rel="noopener"
+        class="gradient-btn block text-center w-full py-4 justify-center text-xs">
+        LET'S TALK ON WHATSAPP
+      </a>
+      <p class="text-center text-[10px] font-mono font-bold" style="color:#777">08110923670 // SYNTH MEDIA AGENCY</p>
+    </div>
+  </div>
+
+  <main class="bg-white text-black">
+    <!-- Hero Section -->
+    <section id="hero"
+      class="relative pt-32 pb-20 md:pt-40 md:pb-24 px-6 md:px-12 overflow-hidden border-b border-zinc-200 bg-white text-black">
+      <div class="max-w-7xl mx-auto">
+
+        <!-- Two-Column Hero Grid: Text (left) | Ambassador (right) -->
+        <div class="flex flex-col-reverse md:flex-row items-center gap-10 md:gap-16">
+
+          <!-- LEFT: Headline + CTAs -->
+          <div class="flex-1 space-y-6 text-center md:text-left">
+            <div id="hero-label"
+              class="inline-flex items-center gap-2 text-xs font-mono tracking-widest text-black font-bold uppercase">
+              <span class="w-2 h-2 bg-black rounded-full animate-pulse"></span>
+              SYNTH MEDIA AGENCY
+            </div>
+
+            <h1
+              class="text-4xl sm:text-6xl md:text-6xl lg:text-7xl font-black font-heading tracking-tighter uppercase leading-[0.95] text-black">
+              <span class="block hero-title-line">WE MAKE BRANDS</span>
+              <span class="block hero-title-line text-zinc-600">IMPOSSIBLE TO</span>
+              <span class="block hero-title-line">IGNORE<span class="text-zinc-400">.</span></span>
+            </h1>
+
+            <p id="hero-subtext" class="text-base sm:text-lg text-black max-w-xl font-normal leading-relaxed">
+              Synth Media Agency combines creative strategy, digital growth and technology to help ambitious brands
+              become more visible, more memorable and more effective online.
+            </p>
+
+            <div id="hero-ctas" class="pt-4 flex flex-wrap items-center justify-center md:justify-start gap-4">
+              <a href="#work" class="gradient-btn px-8 py-4 text-xs inline-flex items-center gap-3">
+                VIEW OUR WORK
+                <i data-lucide="arrow-right" class="w-4 h-4"></i>
+              </a>
+              <a href="#contact" class="gradient-btn-outline px-8 py-4 text-xs">
+                LET'S WORK TOGETHER
+              </a>
+            </div>
+          </div>
+
+          <!-- RIGHT: Brand Ambassador Image -->
+          <div class="flex-shrink-0 w-full md:w-auto flex justify-center md:justify-end">
+            <div class="relative w-[280px] sm:w-[320px] md:w-[360px] lg:w-[400px]">
+              <!-- Gradient glow ring behind image -->
+              <div class="absolute -inset-4 rounded-3xl opacity-30 blur-2xl"
+                style="background: linear-gradient(135deg, #E91E8C, #7B2FBE, #2196F3);"></div>
+              <!-- Ambassador image — background removed via CSS mix-blend -->
+              <img src="assets/images/ambassador.jpg" alt="Synth Media Agency Brand Ambassador"
+                class="relative w-full h-auto rounded-2xl shadow-2xl object-cover"
+                style="filter: drop-shadow(0 8px 40px rgba(123,47,190,0.25));">
+              <!-- Subtle gradient overlay at bottom -->
+              <div class="absolute bottom-0 left-0 right-0 h-24 rounded-b-2xl"
+                style="background: linear-gradient(to top, rgba(255,255,255,0.6), transparent);"></div>
+              <!-- Role Badge -->
+              <div
+                class="absolute -bottom-4 left-1/2 -translate-x-1/2 whitespace-nowrap px-5 py-2 rounded-full shadow-lg text-[11px] font-mono font-bold uppercase tracking-wider text-white"
+                style="background: linear-gradient(135deg, #E91E8C, #7B2FBE);">
+                Brand Ambassador
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ===== WATCH OUR STORY — Facebook Video Showcase Section ===== -->
+    <section id="our-video" class="video-section py-20 px-6 md:px-12 bg-white border-b border-zinc-200">
+      <div class="max-w-7xl mx-auto">
+        <div class="text-center mb-12 space-y-3">
+          <span class="gradient-bar mx-auto"></span>
+          <h2 class="text-3xl sm:text-5xl font-black font-heading uppercase" style="color:#111">WATCH OUR STORY<span
+              style="color:#E91E8C">.</span></h2>
+          <p class="text-base text-gray-600 max-w-xl mx-auto font-normal">
+            Experience Synth Media Agency in action — see how we combine creative design, digital growth, and technology
+            to make brands globally visible.
+          </p>
+        </div>
+
+        <!-- Video Selection Tabs / Dual Player Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
+          <!-- Video 1 Card -->
+          <div
+            class="card-hover p-6 rounded-xl border border-zinc-200 bg-white flex flex-col justify-between space-y-4">
+            <div>
+              <div
+                class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-[11px] font-mono font-bold uppercase tracking-wider mb-3 text-white"
+                style="background:linear-gradient(135deg, #E91E8C, #7B2FBE);">
+                <i data-lucide="video" class="w-3.5 h-3.5"></i> FEATURED ADVERT VIDEO
+              </div>
+              <h3 class="text-xl font-bold font-heading uppercase text-black mb-2">SYNTH </h3>
+              <p class="text-xs text-gray-500 font-normal">Our signature creative and digital agency video showcase.</p>
+            </div>
+            <div class="flex flex-col sm:flex-row gap-3 pt-2">
+              <button onclick="synthPlayVideo('video1')"
+                class="gradient-btn flex-1 justify-center text-xs py-3.5 gap-2 rounded-lg shadow-md">
+                <i data-lucide="play-circle" class="w-4 h-4"></i> PLAY VIDEO
+              </button>
+              <a href="https://www.facebook.com/share/v/19H2He5BpB/?mibextid=WC7FNe" target="_blank" rel="noopener"
+                class="gradient-btn-outline text-xs py-3.5 px-4 justify-center rounded-lg whitespace-nowrap">
+                OPEN FACEBOOK ↗
+              </a>
+            </div>
+          </div>
+
+          <!-- Video 2 Card -->
+          <div
+            class="card-hover p-6 rounded-xl border border-zinc-200 bg-white flex flex-col justify-between space-y-4">
+            <div>
+              <div
+                class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-[11px] font-mono font-bold uppercase tracking-wider mb-3 text-white"
+                style="background:linear-gradient(135deg, #7B2FBE, #2196F3);">
+                <i data-lucide="clapperboard" class="w-3.5 h-3.5"></i> AGENCY REEL 02
+              </div>
+              <h3 class="text-xl font-bold font-heading uppercase text-black mb-2">SYNTH </h3>
+              <p class="text-xs text-gray-500 font-normal">High-energy highlight reel of digital and technology
+                solutions.</p>
+            </div>
+            <div class="flex flex-col sm:flex-row gap-3 pt-2">
+              <button onclick="synthPlayVideo('video2')"
+                class="gradient-btn-outline flex-1 justify-center text-xs py-3.5 gap-2 rounded-lg">
+                <i data-lucide="play-circle" class="w-4 h-4"></i> PLAY VIDEO
+              </button>
+              <a href="https://www.facebook.com/share/r/14oRQBYzseT/?mibextid=WC7FNe" target="_blank" rel="noopener"
+                class="gradient-btn-outline text-xs py-3.5 px-4 justify-center rounded-lg whitespace-nowrap">
+                OPEN FACEBOOK ↗
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Embedded Video Screen Container -->
+        <div id="yt-frame-container" class="mt-8">
+          <!-- Initial Thumbnail Screen (9:16 Vertical Reel Frame) -->
+          <div id="yt-wrapper"
+            class="youtube-embed-wrapper max-w-[380px] mx-auto rounded-2xl overflow-hidden shadow-2xl border-4 border-purple-500 cursor-pointer"
+            onclick="synthPlayVideo('video1')" role="button" aria-label="Play Synth Media Agency Reel">
+            <div
+              class="w-full aspect-[9/16] bg-gradient-to-br from-pink-500 via-purple-600 to-blue-500 flex flex-col items-center justify-center p-6 text-center text-white relative">
+              <div class="yt-play-btn mb-4">
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M8 5v14l11-7z" />
+                </svg>
+              </div>
+              <h3 class="text-xl font-bold font-heading uppercase tracking-wide text-white">CLICK TO PLAY SYNTH ADVERT
+              </h3>
+              <p class="text-[10px] font-mono tracking-widest text-white/80 uppercase mt-2">VERTICAL REEL SHOWCASE
+                (9:16)</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Brand Introduction -->
+    <section id="about" class="section-padding px-6 md:px-12 border-b border-zinc-200 bg-white text-black">
+      <div class="max-w-7xl mx-auto">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+          <div class="lg:col-span-4 space-y-2">
+            <h2 class="text-2xl font-heading font-bold text-black uppercase">Don't just exist online. Make an impact.
+            </h2>
+          </div>
+          <div class="lg:col-span-8 space-y-8 gsap-reveal-header">
+            <h3 class="text-3xl sm:text-5xl lg:text-6xl font-black font-heading uppercase text-black leading-tight">
+              WE DON'T JUST CREATE CONTENT.<br>
+              <span class="text-zinc-600">WE BUILD DIGITAL PRESENCE.</span>
+            </h3>
+            <p class="text-black text-lg sm:text-xl font-normal leading-relaxed max-w-3xl">
+              From strategy and design to content, advertising, websites and digital solutions, Synth Media Agency helps
+              businesses and organizations communicate better, reach the right audience and build stronger digital
+              experiences.
+            </p>
+            <div class="grid grid-cols-2 sm:grid-cols-4 gap-6 pt-6 border-t border-zinc-200">
+              <div>
+                <span class="block text-2xl font-bold font-heading text-black">LOOK</span>
+                <span class="text-xs font-mono text-black font-bold uppercase">BETTER</span>
+              </div>
+              <div>
+                <span class="block text-2xl font-bold font-heading text-black">REACH</span>
+                <span class="text-xs font-mono text-black font-bold uppercase">MORE PEOPLE</span>
+              </div>
+              <div>
+                <span class="block text-2xl font-bold font-heading text-black">GROW</span>
+                <span class="text-xs font-mono text-black font-bold uppercase">DIGITALLY</span>
+              </div>
+              <div>
+                <span class="block text-2xl font-bold font-heading text-black">BUILD</span>
+                <span class="text-xs font-mono text-black font-bold uppercase">TECH THAT WORKS</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- THREE WAYS WE HELP BRANDS MOVE FORWARD (100% PURE WHITE DIVS) -->
+    <section id="pillars" class="section-padding px-6 md:px-12 border-b border-zinc-200 bg-white text-black">
+      <div class="max-w-7xl mx-auto">
+        <div class="mb-16 space-y-3">
+          <h2 class="text-3xl sm:text-5xl font-black font-heading text-black uppercase">THREE WAYS WE HELP BRANDS MOVE
+            FORWARD.</h2>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+          <!-- Pillar 01: CREATIVE -->
+          <div class="pillar-card">
+            <div>
+              <div class="pillar-icon-circle creative"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                  viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <path d="M12 2L2 7l10 5 10-5-10-5z" />
+                  <path d="M2 17l10 5 10-5" />
+                  <path d="M2 12l10 5 10-5" />
+                </svg></div>
+              <h3 class="text-3xl font-extrabold font-heading uppercase mb-2" style="color:#111">CREATIVE</h3>
+              <p class="text-xs font-mono font-bold uppercase tracking-wider mb-6" style="color:#E91E8C">WE MAKE IDEAS
+                VISIBLE.</p>
+              <p class="text-sm font-normal leading-relaxed mb-8" style="color:#444">
+                Creative strategy, design, content and brand thinking that make businesses and organizations look
+                distinctive and communicate clearly.
+              </p>
+            </div>
+            <div>
+              <ul class="space-y-3 mb-8 text-xs font-bold uppercase tracking-wider border-t border-zinc-200 pt-6"
+                style="color:#333">
+                <li class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bullet-creative"></span> Creative
+                  Design</li>
+                <li class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bullet-creative"></span> Content
+                  Creation</li>
+                <li class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bullet-creative"></span> Creative
+                  Strategy</li>
+                <li class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bullet-creative"></span> Brand
+                  Strategy</li>
+              </ul>
+              <a href="#services"
+                class="inline-flex items-center gap-2 text-xs font-heading font-bold uppercase tracking-widest hover:translate-x-2 transition-transform"
+                style="color:#E91E8C">
+                EXPLORE CREATIVE <i data-lucide="arrow-right" class="w-4 h-4"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Pillar 02: DIGITAL GROWTH -->
+          <div class="pillar-card">
+            <div>
+              <div class="pillar-icon-circle digital"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                  viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <polyline points="22 12 18 12 15 21 9 3 6 12 2 12" />
+                </svg></div>
+              <h3 class="text-3xl font-extrabold font-heading uppercase mb-2" style="color:#111">DIGITAL GROWTH</h3>
+              <p class="text-xs font-mono font-bold uppercase tracking-wider mb-6" style="color:#22C55E">WE TURN
+                ATTENTION INTO OPPORTUNITY.</p>
+              <p class="text-sm font-normal leading-relaxed mb-8" style="color:#444">
+                Digital marketing, social media and campaigns designed to put brands in front of the right audience and
+                drive meaningful engagement.
+              </p>
+            </div>
+            <div>
+              <ul class="space-y-3 mb-8 text-xs font-bold uppercase tracking-wider border-t border-zinc-200 pt-6"
+                style="color:#333">
+                <li class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bullet-digital"></span> Social
+                  Media Management</li>
+                <li class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bullet-digital"></span> Digital
+                  Marketing</li>
+                <li class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bullet-digital"></span> Social
+                  Media Advertising</li>
+                <li class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bullet-digital"></span> Campaign
+                  Management</li>
+              </ul>
+              <a href="#services"
+                class="inline-flex items-center gap-2 text-xs font-heading font-bold uppercase tracking-widest hover:translate-x-2 transition-transform"
+                style="color:#22C55E">
+                EXPLORE DIGITAL <i data-lucide="arrow-right" class="w-4 h-4"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Pillar 03: TECHNOLOGY -->
+          <div class="pillar-card">
+            <div>
+              <div class="pillar-icon-circle technology"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                  viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <rect x="2" y="3" width="20" height="14" rx="2" />
+                  <line x1="8" y1="21" x2="16" y2="21" />
+                  <line x1="12" y1="17" x2="12" y2="21" />
+                </svg></div>
+              <h3 class="text-3xl font-extrabold font-heading uppercase mb-2" style="color:#111">TECHNOLOGY</h3>
+              <p class="text-xs font-mono font-bold uppercase tracking-wider mb-6" style="color:#2196F3">WE BUILD WHAT
+                YOUR DIGITAL PRESENCE NEEDS.</p>
+              <p class="text-sm font-normal leading-relaxed mb-8" style="color:#444">
+                Websites, digital solutions and technical support that help businesses and organizations operate,
+                communicate and grow more effectively.
+              </p>
+            </div>
+            <div>
+              <ul class="space-y-3 mb-8 text-xs font-bold uppercase tracking-wider border-t border-zinc-200 pt-6"
+                style="color:#333">
+                <li class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bullet-tech"></span> Web
+                  Development</li>
+                <li class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bullet-tech"></span> Website
+                  Design</li>
+                <li class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bullet-tech"></span> Website
+                  Maintenance</li>
+                <li class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bullet-tech"></span> Tech Support
+                  &amp; Solutions</li>
+              </ul>
+              <a href="#services"
+                class="inline-flex items-center gap-2 text-xs font-heading font-bold uppercase tracking-widest hover:translate-x-2 transition-transform"
+                style="color:#2196F3">
+                EXPLORE TECHNOLOGY <i data-lucide="arrow-right" class="w-4 h-4"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHAT WE DO & SERVICE CATEGORIES (100% PURE WHITE DIVS) -->
+    <section id="services" class="section-padding px-6 md:px-12 border-b border-zinc-200 bg-white text-black">
+      <div class="max-w-7xl mx-auto">
+        <div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
+          <div>
+            <h2 class="text-4xl sm:text-6xl font-black font-heading text-black uppercase">WHAT WE DO<span
+                class="text-zinc-400">.</span></h2>
+          </div>
+          <p class="text-black font-mono text-sm max-w-md uppercase font-bold">
+            "Creative thinking. Digital growth. Technology that works."
+          </p>
+        </div>
+
+        <div class="space-y-16">
+          <!-- Category 1: CREATIVE SERVICES -->
+          <div>
+            <h3
+              class="text-xl font-heading font-bold text-black uppercase tracking-wider mb-6 pb-2 border-b border-zinc-200">
+              CREATIVE SERVICES
+            </h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div class="bg-white border border-zinc-200 hover:border-black p-6 transition-all shadow-sm">
+                <h4 class="text-xl font-bold font-heading text-black uppercase mb-2">CREATIVE DESIGN</h4>
+                <p class="text-sm text-black font-normal">Social media graphics, flyers, advertisements, campaign
+                  visuals, thumbnails and branded visual content.</p>
+              </div>
+              <div class="bg-white border border-zinc-200 hover:border-black p-6 transition-all shadow-sm">
+                <h4 class="text-xl font-bold font-heading text-black uppercase mb-2">CONTENT CREATION</h4>
+                <p class="text-sm text-black font-normal">Short-form video, promotional content, AI-assisted production
+                  and visual storytelling built for modern audiences.</p>
+              </div>
+              <div class="bg-white border border-zinc-200 hover:border-black p-6 transition-all shadow-sm">
+                <h4 class="text-xl font-bold font-heading text-black uppercase mb-2">CREATIVE STRATEGY</h4>
+                <p class="text-sm text-black font-normal">Creative concepts, campaign direction and communication
+                  strategies that give ideas a clear direction.</p>
+              </div>
+              <div class="bg-white border border-zinc-200 hover:border-black p-6 transition-all shadow-sm">
+                <h4 class="text-xl font-bold font-heading text-black uppercase mb-2">BRAND STRATEGY</h4>
+                <p class="text-sm text-black font-normal">Positioning, visual direction, messaging and digital identity
+                  that help brands become recognizable.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Category 2: DIGITAL GROWTH SERVICES -->
+          <div>
+            <h3
+              class="text-xl font-heading font-bold text-black uppercase tracking-wider mb-6 pb-2 border-b border-zinc-200">
+              DIGITAL GROWTH SERVICES
+            </h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div class="bg-white border border-zinc-200 hover:border-black p-6 transition-all shadow-sm">
+                <h4 class="text-xl font-bold font-heading text-black uppercase mb-2">SOCIAL MEDIA MANAGEMENT</h4>
+                <p class="text-sm text-black font-normal">Content planning, creation, publishing and audience engagement
+                  designed to keep brands active and relevant.</p>
+              </div>
+              <div class="bg-white border border-zinc-200 hover:border-black p-6 transition-all shadow-sm">
+                <h4 class="text-xl font-bold font-heading text-black uppercase mb-2">DIGITAL MARKETING</h4>
+                <p class="text-sm text-black font-normal">Digital strategies designed to increase visibility,
+                  engagement, leads and meaningful business growth.</p>
+              </div>
+              <div class="bg-white border border-zinc-200 hover:border-black p-6 transition-all shadow-sm">
+                <h4 class="text-xl font-bold font-heading text-black uppercase mb-2">SOCIAL MEDIA ADVERTISING</h4>
+                <p class="text-sm text-black font-normal">Paid campaigns designed around awareness, traffic, engagement,
+                  leads and conversions.</p>
+              </div>
+              <div class="bg-white border border-zinc-200 hover:border-black p-6 transition-all shadow-sm">
+                <h4 class="text-xl font-bold font-heading text-black uppercase mb-2">CAMPAIGN MANAGEMENT</h4>
+                <p class="text-sm text-black font-normal">From concept to execution, we coordinate creative
+                  communication and digital campaigns around clear objectives.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Category 3: TECHNOLOGY SERVICES -->
+          <div>
+            <h3
+              class="text-xl font-heading font-bold text-black uppercase tracking-wider mb-6 pb-2 border-b border-zinc-200">
+              TECHNOLOGY SERVICES
+            </h3>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+              <div class="bg-white border border-zinc-200 hover:border-black p-6 transition-all shadow-sm">
+                <h4 class="text-xl font-bold font-heading text-black uppercase mb-2">WEB DEVELOPMENT</h4>
+                <p class="text-sm text-black font-normal">Modern, responsive websites and digital experiences built
+                  around your brand and business goals.</p>
+              </div>
+              <div class="bg-white border border-zinc-200 hover:border-black p-6 transition-all shadow-sm">
+                <h4 class="text-xl font-bold font-heading text-black uppercase mb-2">WEBSITE DESIGN</h4>
+                <p class="text-sm text-black font-normal">Professional website interfaces focused on usability, visual
+                  identity, performance and conversion.</p>
+              </div>
+              <div class="bg-white border border-zinc-200 hover:border-black p-6 transition-all shadow-sm">
+                <h4 class="text-xl font-bold font-heading text-black uppercase mb-2">WEBSITE MAINTENANCE</h4>
+                <p class="text-sm text-black font-normal">Website updates, troubleshooting, content changes, technical
+                  maintenance and performance improvements.</p>
+              </div>
+              <div class="bg-white border border-zinc-200 hover:border-black p-6 transition-all shadow-sm">
+                <h4 class="text-xl font-bold font-heading text-black uppercase mb-2">TECH SUPPORT</h4>
+                <p class="text-sm text-black font-normal">Practical technical support for websites, digital tools,
+                  integrations, troubleshooting and everyday technology challenges.</p>
+              </div>
+              <div
+                class="bg-white border border-zinc-200 hover:border-black p-6 md:col-span-2 transition-all shadow-sm">
+                <h4 class="text-xl font-bold font-heading text-black uppercase mb-2">DIGITAL SOLUTIONS</h4>
+                <p class="text-sm text-black font-normal">Technology and digital systems designed to solve real business
+                  and organizational problems.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Selected Work / Portfolio Section -->
+    <section id="work" class="section-padding px-6 md:px-12 border-b border-zinc-200 bg-white text-black">
+      <div class="max-w-7xl mx-auto">
+        <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
+          <div>
+            <h2 class="text-4xl sm:text-6xl font-black font-heading text-black uppercase">SELECTED WORK<span
+                class="text-zinc-400">.</span></h2>
+          </div>
+          <p class="text-black font-mono text-sm max-w-md uppercase font-bold">
+            "A selection of ideas we've turned into visual experiences, digital products and campaigns."
+          </p>
+        </div>
+
+        <!-- Filter Category Tabs -->
+        <div class="flex flex-wrap items-center gap-2 mb-12 pb-4 border-b border-zinc-200 overflow-x-auto">
+          <button class="filter-btn active" data-filter="ALL">ALL</button>
+          <button class="filter-btn" data-filter="BRANDING">BRANDING</button>
+          <button class="filter-btn" data-filter="SOCIAL MEDIA">SOCIAL MEDIA</button>
+          <button class="filter-btn" data-filter="DESIGN">DESIGN</button>
+          <button class="filter-btn" data-filter="CONTENT">VIDEO &amp; CONTENT</button>
+          <button class="filter-btn" data-filter="ADVERTISING">ADVERTISING</button>
+          <button class="filter-btn" data-filter="CAMPAIGNS">CAMPAIGNS</button>
+          <button class="filter-btn" data-filter="WEB DEVELOPMENT">WEB DEVELOPMENT</button>
+          <button class="filter-btn" data-filter="TECHNOLOGY">TECHNOLOGY</button>
+        </div>
+
+        <!-- Asymmetrical Portfolio Grid Container -->
+        <div id="portfolio-grid-container" class="portfolio-grid">
+          <!-- Dynamic JavaScript Rendered Content -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Project Detail Lightbox Modal -->
+    <div id="project-modal" class="modal-overlay">
+      <div class="modal-content-container bg-white text-black border border-zinc-200">
+        <button id="modal-close-btn"
+          class="absolute top-4 right-4 z-20 bg-white text-black hover:bg-black hover:text-white p-3 transition-colors border border-zinc-300">
+          <i data-lucide="x" class="w-5 h-5"></i>
+        </button>
+        <div id="modal-body">
+          <!-- Dynamic Content Injected via JavaScript -->
+        </div>
+      </div>
+    </div>
+
+    <!-- BUILT FOR AMBITIOUS BRANDS (100% PURE WHITE DIVS) -->
+    <section id="industries" class="section-padding px-6 md:px-12 border-b border-zinc-200 bg-white text-black">
+      <div class="max-w-7xl mx-auto">
+        <div class="mb-16">
+          <h2 class="text-3xl sm:text-5xl font-black font-heading text-black uppercase">BUILT FOR AMBITIOUS BRANDS<span
+              class="text-zinc-400">.</span></h2>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+          <div
+            class="bg-white border border-zinc-200 hover:border-black p-6 flex justify-between items-center transition-all shadow-sm">
+            <span class="font-heading font-bold text-black uppercase text-base">BUSINESSES</span>
+          </div>
+          <div
+            class="bg-white border border-zinc-200 hover:border-black p-6 flex justify-between items-center transition-all shadow-sm">
+            <span class="font-heading font-bold text-black uppercase text-base">CHURCHES &amp; FAITH
+              ORGANIZATIONS</span>
+          </div>
+          <div
+            class="bg-white border border-zinc-200 hover:border-black p-6 flex justify-between items-center transition-all shadow-sm">
+            <span class="font-heading font-bold text-black uppercase text-base">SCHOOLS &amp; ACADEMICS</span>
+          </div>
+          <div
+            class="bg-white border border-zinc-200 hover:border-black p-6 flex justify-between items-center transition-all shadow-sm">
+            <span class="font-heading font-bold text-black uppercase text-base">NGOs &amp; NONPROFITS</span>
+          </div>
+          <div
+            class="bg-white border border-zinc-200 hover:border-black p-6 flex justify-between items-center transition-all shadow-sm">
+            <span class="font-heading font-bold text-black uppercase text-base">REAL ESTATE</span>
+          </div>
+          <div
+            class="bg-white border border-zinc-200 hover:border-black p-6 flex justify-between items-center transition-all shadow-sm">
+            <span class="font-heading font-bold text-black uppercase text-base">RESTAURANTS &amp; FOOD BRANDS</span>
+          </div>
+          <div
+            class="bg-white border border-zinc-200 hover:border-black p-6 flex justify-between items-center transition-all shadow-sm">
+            <span class="font-heading font-bold text-black uppercase text-base">FASHION &amp; BEAUTY</span>
+          </div>
+          <div
+            class="bg-white border border-zinc-200 hover:border-black p-6 flex justify-between items-center transition-all shadow-sm">
+            <span class="font-heading font-bold text-black uppercase text-base">EVENTS &amp; WEDDINGS</span>
+          </div>
+          <div
+            class="bg-white border border-zinc-200 hover:border-black p-6 flex justify-between items-center transition-all shadow-sm">
+            <span class="font-heading font-bold text-black uppercase text-base">POLITICAL &amp; ADVOCACY
+              CAMPAIGNS</span>
+          </div>
+          <div
+            class="bg-white border border-zinc-200 hover:border-black p-6 flex justify-between items-center transition-all shadow-sm">
+            <span class="font-heading font-bold text-black uppercase text-base">STARTUPS &amp; TECH BUSINESSES</span>
+          </div>
+          <div
+            class="bg-white border border-zinc-200 hover:border-black p-6 flex justify-between items-center md:col-span-2 lg:col-span-2 transition-all shadow-sm">
+            <span class="font-heading font-bold text-black uppercase text-base">PROFESSIONAL SERVICES</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FROM IDEA TO IMPACT (100% PURE WHITE DIVS) -->
+    <section id="process" class="section-padding px-6 md:px-12 border-b border-zinc-200 bg-white text-black">
+      <div class="max-w-7xl mx-auto">
+        <div class="mb-16">
+          <h2 class="text-3xl sm:text-5xl font-black font-heading text-black uppercase">FROM IDEA TO IMPACT<span
+              class="text-zinc-400">.</span></h2>
+        </div>
+
+        <div class="space-y-6">
+          <div
+            class="bg-white border border-zinc-200 hover:border-black p-8 grid grid-cols-1 md:grid-cols-12 gap-6 items-center gsap-fade-up shadow-sm transition-all">
+            <div class="md:col-span-2 text-2xl font-mono text-black font-bold">01</div>
+            <div class="md:col-span-4 font-heading font-bold text-2xl text-black uppercase">DISCOVER</div>
+            <div class="md:col-span-6 text-black text-sm font-normal">We understand your brand, audience, goals and
+              challenges.</div>
+          </div>
+          <div
+            class="bg-white border border-zinc-200 hover:border-black p-8 grid grid-cols-1 md:grid-cols-12 gap-6 items-center gsap-fade-up shadow-sm transition-all">
+            <div class="md:col-span-2 text-2xl font-mono text-black font-bold">02</div>
+            <div class="md:col-span-4 font-heading font-bold text-2xl text-black uppercase">STRATEGIZE</div>
+            <div class="md:col-span-6 text-black text-sm font-normal">We develop the creative direction, digital
+              strategy or technology approach.</div>
+          </div>
+          <div
+            class="bg-white border border-zinc-200 hover:border-black p-8 grid grid-cols-1 md:grid-cols-12 gap-6 items-center gsap-fade-up shadow-sm transition-all">
+            <div class="md:col-span-2 text-2xl font-mono text-black font-bold">03</div>
+            <div class="md:col-span-4 font-heading font-bold text-2xl text-black uppercase">CREATE</div>
+            <div class="md:col-span-6 text-black text-sm font-normal">We produce the designs, content, campaigns,
+              websites or digital solutions.</div>
+          </div>
+          <div
+            class="bg-white border border-zinc-200 hover:border-black p-8 grid grid-cols-1 md:grid-cols-12 gap-6 items-center gsap-fade-up shadow-sm transition-all">
+            <div class="md:col-span-2 text-2xl font-mono text-black font-bold">04</div>
+            <div class="md:col-span-4 font-heading font-bold text-2xl text-black uppercase">LAUNCH</div>
+            <div class="md:col-span-6 text-black text-sm font-normal">We put the work into the world and connect it with
+              the right audience.</div>
+          </div>
+          <div
+            class="bg-white border border-zinc-200 hover:border-black p-8 grid grid-cols-1 md:grid-cols-12 gap-6 items-center gsap-fade-up shadow-sm transition-all">
+            <div class="md:col-span-2 text-2xl font-mono text-black font-bold">05</div>
+            <div class="md:col-span-4 font-heading font-bold text-2xl text-black uppercase">OPTIMIZE</div>
+            <div class="md:col-span-6 text-black text-sm font-normal">We analyze, refine and improve what works.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHY SYNTH? (100% PURE WHITE DIVS) -->
+    <section id="why-synth" class="section-padding px-6 md:px-12 border-b border-zinc-200 bg-white text-black">
+      <div class="max-w-7xl mx-auto">
+        <div class="mb-16">
+          <h2 class="text-3xl sm:text-5xl font-black font-heading text-black uppercase">WHY SYNTH<span
+              class="text-zinc-400">?</span></h2>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div class="bg-white border border-zinc-200 hover:border-black p-8 shadow-sm transition-all">
+            <h3 class="text-xl font-bold font-heading text-black uppercase mb-3">CREATIVE THINKING</h3>
+            <p class="text-black text-sm font-normal">We don't believe in generic content. Every visual asset is
+              designed to communicate authority.</p>
+          </div>
+          <div class="bg-white border border-zinc-200 hover:border-black p-8 shadow-sm transition-all">
+            <h3 class="text-xl font-bold font-heading text-black uppercase mb-3">AI-POWERED PRODUCTION</h3>
+            <p class="text-black text-sm font-normal">We use modern AI tools to accelerate production while keeping
+              strategy and human creativity at the center.</p>
+          </div>
+          <div class="bg-white border border-zinc-200 hover:border-black p-8 shadow-sm transition-all">
+            <h3 class="text-xl font-bold font-heading text-black uppercase mb-3">STRATEGIC EXECUTION</h3>
+            <p class="text-black text-sm font-normal">Every creative, digital and technology decision should serve a
+              business purpose.</p>
+          </div>
+          <div class="bg-white border border-zinc-200 hover:border-black p-8 shadow-sm transition-all">
+            <h3 class="text-xl font-bold font-heading text-black uppercase mb-3">FAST EXECUTION</h3>
+            <p class="text-black text-sm font-normal">We turn ideas into usable digital experiences efficiently without
+              long corporate delays.</p>
+          </div>
+          <div class="bg-white border border-zinc-200 hover:border-black p-8 md:col-span-2 shadow-sm transition-all">
+            <h3 class="text-xl font-bold font-heading text-black uppercase mb-3">ONE DIGITAL PARTNER</h3>
+            <p class="text-black text-sm font-normal">Creative design, digital growth and technology infrastructure
+              seamlessly united under one roof.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Dedicated Technology Section (100% PURE WHITE DIVS) -->
+    <section id="technology" class="section-padding px-6 md:px-12 border-b border-zinc-200 bg-white text-black">
+      <div class="max-w-7xl mx-auto">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+          <div class="lg:col-span-6 space-y-6">
+            <h2 class="text-3xl sm:text-5xl font-black font-heading text-black uppercase leading-tight">
+              WE BUILD MORE THAN CONTENT<span class="text-zinc-400">.</span>
+            </h2>
+            <p class="text-black text-base sm:text-lg font-normal leading-relaxed">
+              From modern websites to digital systems and technical support, we help businesses build the technology
+              they need to operate, communicate and grow.
+            </p>
+
+            <div class="space-y-6 pt-4">
+              <div class="accent-border-left">
+                <h3 class="font-heading font-bold text-lg uppercase" style="color:#2196F3">WEB DEVELOPMENT</h3>
+                <p class="text-sm font-normal" style="color:#444">Fast, responsive and modern websites built around your
+                  brand
+                  and business goals.</p>
+              </div>
+              <div class="accent-border-left">
+                <h3 class="font-heading font-bold text-lg uppercase" style="color:#7B2FBE">TECH SUPPORT</h3>
+                <p class="text-sm font-normal" style="color:#444">Practical technical assistance that keeps your digital
+                  tools
+                  and web systems working.</p>
+              </div>
+              <div class="accent-border-left">
+                <h3 class="font-heading font-bold text-lg uppercase" style="color:#E91E8C">DIGITAL SOLUTIONS</h3>
+                <p class="text-sm font-normal" style="color:#444">Technology and digital systems designed to solve real
+                  business
+                  and organizational problems.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="lg:col-span-6">
+            <div class="relative aspect-video bg-white border border-zinc-200 overflow-hidden shadow-sm">
+              <img src="assets/images/general/tech-visual.svg" alt="Synth Technology Architecture"
+                class="w-full h-full object-cover">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Creative Statement Section -->
+    <section id="creative-statement-section" class="py-28 px-6 md:px-12 bg-white border-b border-zinc-200 text-center">
+      <div class="max-w-5xl mx-auto space-y-8">
+        <h2
+          class="text-3xl sm:text-5xl lg:text-7xl font-black font-heading text-black uppercase tracking-tighter leading-none">
+          <span class="block creative-statement-line">THE INTERNET IS CROWDED.</span>
+          <span class="block creative-statement-line text-zinc-600">YOUR BRAND SHOULD NOT</span>
+          <span class="block creative-statement-line">DISAPPEAR IN IT<span class="text-zinc-400">.</span></span>
+        </h2>
+        <div class="pt-8">
+          <h3 class="text-2xl sm:text-4xl font-bold font-heading text-black uppercase tracking-tight">
+            WE CREATE WORK THAT GETS NOTICED<span class="text-zinc-400">.</span>
+          </h3>
+        </div>
+      </div>
+    </section>
+
+    <!-- Capabilities / Results -->
+    <section id="capabilities" class="section-padding px-6 md:px-12 border-b border-zinc-200 bg-white text-black">
+      <div class="max-w-7xl mx-auto">
+        <div class="mb-16">
+          <h2 class="text-3xl sm:text-5xl font-black font-heading text-black uppercase">BUILT FOR ATTENTION. BUILT TO
+            WORK.</h2>
+        </div>
+
+        <div class="grid grid-cols-2 md:grid-cols-3 gap-6 text-center">
+          <div class="bg-white border border-zinc-200 p-8 hover:border-black transition-colors shadow-sm">
+            <span class="font-heading font-black text-2xl sm:text-4xl text-black uppercase block mb-2">STRATEGY</span>
+            <span class="text-xs font-mono text-black font-bold uppercase">POSITIONING &amp; CLARITY</span>
+          </div>
+          <div class="bg-white border border-zinc-200 p-8 hover:border-black transition-colors shadow-sm">
+            <span class="font-heading font-black text-2xl sm:text-4xl text-black uppercase block mb-2">CONTENT</span>
+            <span class="text-xs font-mono text-black font-bold uppercase">HIGH-IMPACT VISUALS</span>
+          </div>
+          <div class="bg-white border border-zinc-200 p-8 hover:border-black transition-colors shadow-sm">
+            <span class="font-heading font-black text-2xl sm:text-4xl text-black uppercase block mb-2">DESIGN</span>
+            <span class="text-xs font-mono text-black font-bold uppercase">EDITORIAL MINIMALISM</span>
+          </div>
+          <div class="bg-white border border-zinc-200 p-8 hover:border-black transition-colors shadow-sm">
+            <span class="font-heading font-black text-2xl sm:text-4xl text-black uppercase block mb-2">DIGITAL</span>
+            <span class="text-xs font-mono text-black font-bold uppercase">SOCIAL MEDIA GROWTH</span>
+          </div>
+          <div class="bg-white border border-zinc-200 p-8 hover:border-black transition-colors shadow-sm">
+            <span class="font-heading font-black text-2xl sm:text-4xl text-black uppercase block mb-2">TECHNOLOGY</span>
+            <span class="text-xs font-mono text-black font-bold uppercase">MODERN WEB SYSTEMS</span>
+          </div>
+          <div class="bg-white border border-zinc-200 p-8 hover:border-black transition-colors shadow-sm">
+            <span class="font-heading font-black text-2xl sm:text-4xl text-black uppercase block mb-2">CAMPAIGNS</span>
+            <span class="text-xs font-mono text-black font-bold uppercase">TARGETED RESULTS</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section & Form -->
+    <section id="contact" class="section-padding px-6 md:px-12 border-b border-zinc-200 bg-white text-black">
+      <div class="max-w-7xl mx-auto">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+          <!-- Left CTA Column -->
+          <div class="lg:col-span-5 space-y-8">
+            <h2 class="text-4xl sm:text-6xl font-black font-heading text-black uppercase leading-none">
+              READY TO BE SEEN<span class="text-zinc-400">?</span>
+            </h2>
+            <p class="text-black text-lg font-normal leading-relaxed">
+              Let's create something people will remember. Tell us about your brand or technology requirements.
+            </p>
+
+            <div class="space-y-4 pt-4 border-t border-zinc-200">
+              <div>
+                <span class="text-[10px] font-mono text-black font-bold uppercase block">PHONE &amp; WHATSAPP</span>
+                <a href="https://wa.me/2348110923670" target="_blank" rel="noopener"
+                  class="text-lg font-bold font-heading text-black hover:underline">08110923670</a>
+              </div>
+              <div>
+                <span class="text-[10px] font-mono text-black font-bold uppercase block">AGENCY ADDRESS</span>
+                <span class="text-sm font-semibold text-black">Synth Media Agency // Global Operations</span>
+              </div>
+            </div>
+
+            <div class="pt-4 flex flex-wrap gap-4">
+              <a href="https://wa.me/2348110923670" target="_blank" rel="noopener"
+                class="gradient-btn px-6 py-3.5 text-xs inline-flex items-center gap-2">
+                <i data-lucide="message-square" class="w-4 h-4"></i> WHATSAPP US
+              </a>
+            </div>
+          </div>
+
+          <!-- Right Contact Form Column -->
+          <div class="lg:col-span-7 bg-white p-8 md:p-10 border border-zinc-200 shadow-sm">
+            <h3 class="text-xl font-bold font-heading text-black uppercase mb-6">START THE CONVERSATION</h3>
+
+            <form id="synth-contact-form" class="space-y-6">
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                <div>
+                  <label for="form-name" class="block text-xs font-mono text-black font-bold uppercase mb-2">YOUR NAME
+                    *</label>
+                  <input type="text" id="form-name" required placeholder="John Doe"
+                    class="w-full bg-white border border-zinc-300 text-black text-sm p-3.5 focus:border-black focus:outline-none">
+                </div>
+                <div>
+                  <label for="form-phone" class="block text-xs font-mono text-black font-bold uppercase mb-2">WHATSAPP /
+                    PHONE</label>
+                  <input type="text" id="form-phone" placeholder="08110923670"
+                    class="w-full bg-white border border-zinc-300 text-black text-sm p-3.5 focus:border-black focus:outline-none">
+                </div>
+              </div>
+
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                <div>
+                  <label for="form-email" class="block text-xs font-mono text-black font-bold uppercase mb-2">EMAIL
+                    ADDRESS *</label>
+                  <input type="email" id="form-email" required placeholder="john@example.com"
+                    class="w-full bg-white border border-zinc-300 text-black text-sm p-3.5 focus:border-black focus:outline-none">
+                </div>
+                <div>
+                  <label for="form-service" class="block text-xs font-mono text-black font-bold uppercase mb-2">SERVICE
+                    NEEDED *</label>
+                  <select id="form-service" required
+                    class="w-full bg-white border border-zinc-300 text-black text-sm p-3.5 focus:border-black focus:outline-none">
+                    <option value="">Select Service Area...</option>
+                    <option value="Creative Strategy & Design">Creative Strategy &amp; Design</option>
+                    <option value="Digital Growth & Marketing">Digital Growth &amp; Social Ads</option>
+                    <option value="Web Development & Website Design">Web Development &amp; Web Design</option>
+                    <option value="Website Maintenance & Tech Support">Website Maintenance &amp; Tech Support</option>
+                    <option value="Full Brand & Tech Package">Full Brand &amp; Technology Package</option>
+                  </select>
+                </div>
+              </div>
+
+              <div>
+                <label for="form-description"
+                  class="block text-xs font-mono text-black font-bold uppercase mb-2">PROJECT DESCRIPTION *</label>
+                <textarea id="form-description" rows="4" required
+                  placeholder="Tell us about your brand, objectives and timeline..."
+                  class="w-full bg-white border border-zinc-300 text-black text-sm p-3.5 focus:border-black focus:outline-none"></textarea>
+              </div>
+
+              <button type="submit" class="gradient-btn w-full py-4 justify-center text-xs">
+                SUBMIT PROJECT REQUEST
+              </button>
+            </form>
+
+            <div id="form-response-msg" class="hidden"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Infinite Marquee Section -->
+    <div class="py-8 bg-white border-b border-zinc-200 overflow-hidden">
+      <div class="marquee-container">
+        <div
+          class="marquee-content font-heading font-extrabold text-2xl sm:text-3xl text-black uppercase tracking-widest gap-8">
+          <span>CREATIVE STRATEGY</span> <span class="text-zinc-400">•</span>
+          <span>DIGITAL MARKETING</span> <span class="text-zinc-400">•</span>
+          <span>CONTENT CREATION</span> <span class="text-zinc-400">•</span>
+          <span>BRAND DESIGN</span> <span class="text-zinc-400">•</span>
+          <span>WEB DEVELOPMENT</span> <span class="text-zinc-400">•</span>
+          <span>TECHNOLOGY</span> <span class="text-zinc-400">•</span>
+          <span>CAMPAIGNS</span> <span class="text-zinc-400">•</span>
+          <span>CREATIVE STRATEGY</span> <span class="text-zinc-400">•</span>
+          <span>DIGITAL MARKETING</span> <span class="text-zinc-400">•</span>
+          <span>CONTENT CREATION</span> <span class="text-zinc-400">•</span>
+          <span>BRAND DESIGN</span> <span class="text-zinc-400">•</span>
+          <span>WEB DEVELOPMENT</span> <span class="text-zinc-400">•</span>
+          <span>TECHNOLOGY</span> <span class="text-zinc-400">•</span>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Minimalist Footer -->
+  <footer class="py-16 px-6 md:px-12 bg-white border-t border-zinc-200 text-xs text-black">
+    <div class="max-w-7xl mx-auto space-y-12">
+      <div
+        class="flex flex-col md:flex-row justify-between items-start md:items-center gap-8 border-b border-zinc-200 pb-12">
+        <div class="flex items-center gap-3">
+          <img src="assets/images/general/synth-logo.svg" alt="Synth Logo" class="w-8 h-8 text-black">
+          <div>
+            <span class="text-2xl font-bold font-heading text-black">SYNTH<span class="text-zinc-400">.</span></span>
+            <span class="block text-black font-mono text-xs uppercase font-bold tracking-widest mt-0.5">BE GLOBALLY
+              SEEN.</span>
+          </div>
+        </div>
+        <div class="flex flex-wrap gap-6 font-heading font-bold uppercase tracking-wider text-black">
+          <a href="#work" class="hover:text-zinc-600 transition-colors">WORK</a>
+          <a href="#services" class="hover:text-zinc-600 transition-colors">SERVICES</a>
+          <a href="#about" class="hover:text-zinc-600 transition-colors">ABOUT</a>
+          <a href="#process" class="hover:text-zinc-600 transition-colors">PROCESS</a>
+          <a href="#technology" class="hover:text-zinc-600 transition-colors">TECH</a>
+          <a href="#contact" class="hover:text-zinc-600 transition-colors">CONTACT</a>
+        </div>
+      </div>
+
+      <div class="flex flex-col md:flex-row justify-between items-center gap-6 text-black font-mono font-bold">
+        <div>
+          <span>PHONE: 08110923670</span> // <span>WHATSAPP: +2348110923670</span>
+        </div>
+        <div class="flex gap-6 uppercase">
+          <a href="#" class="hover:text-zinc-600 transition-colors">INSTAGRAM</a>
+          <a href="#" class="hover:text-zinc-600 transition-colors">FACEBOOK</a>
+          <a href="#" class="hover:text-zinc-600 transition-colors">TIKTOK</a>
+          <a href="#" class="hover:text-zinc-600 transition-colors">LINKEDIN</a>
+        </div>
+      </div>
+
+      <div class="text-center md:text-left text-black font-mono text-[10px] uppercase font-bold tracking-widest pt-4">
+        &copy; 2026 SYNTH MEDIA AGENCY. ALL RIGHTS RESERVED. CREATIVE × DIGITAL × TECHNOLOGY.
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp CTA Button -->
+  <a href="https://wa.me/2348110923670" target="_blank" rel="noopener" class="whatsapp-float"
+    aria-label="Chat with Synth on WhatsApp">
+    <span class="whatsapp-tooltip font-heading">CHAT WITH SYNTH</span>
+    <i data-lucide="message-circle" class="w-6 h-6 text-white"></i>
+  </a>
+
+  <!-- Script Initializer -->
+  <script src="script.js"></script>
+  <script>
+    if (typeof lucide !== 'undefined') {
+      lucide.createIcons();
+    }
+  </script>
+</body>
+
+</html>
