@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service Policy — Synth Media Agency (Sector 5 of 5)</title>
+    <meta name="description"
+        content="Synth Media Agency Service Policy governing service standards, delivery timelines, graphic design, video creation, branding, web development, social media management, and tech solutions.">
+    <meta name="robots" content="index, follow">
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        synthWhite: '#ffffff',
+                        synthCard: '#ffffff',
+                        synthBorder: '#e5e5e5',
+                    },
+                    fontFamily: {
+                        heading: ['Space Grotesk', 'sans-serif'],
+                        body: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="styles.css?v=5">
+</head>
+
+<body class="bg-white text-black antialiased selection:bg-black selection:text-white min-h-screen flex flex-col">
+
+    <!-- Noise Texture Overlay -->
+    <div class="bg-noise"></div>
+
+    <!-- Sticky Header -->
+    <header class="site-header py-5 px-6 md:px-12 bg-white text-black border-b border-zinc-200">
+        <div class="max-w-7xl mx-auto flex items-center justify-between">
+            <a href="index.html"
+                class="group flex items-center gap-3 text-xl font-bold font-heading tracking-tight text-black">
+                <img src="assets/images/general/synth-logo.svg" alt="Synth Logo"
+                    class="w-7 h-7 text-black group-hover:scale-110 transition-transform">
+                <span class="text-black font-extrabold">SYNTH<span class="text-zinc-400">.</span></span>
+            </a>
+
+            <div
+                class="hidden md:flex items-center gap-6 text-xs font-mono font-bold uppercase tracking-wider text-black">
+                <span class="px-3 py-1 bg-zinc-100 rounded border border-zinc-200 text-zinc-600">POLICY SECTOR 5 OF
+                    5</span>
+                <a href="index.html" class="nav-link flex items-center gap-1"><i data-lucide="arrow-left"
+                        class="w-3.5 h-3.5"></i> Back to Main Site</a>
+            </div>
+
+            <div class="flex items-center gap-3">
+                <a href="https://synthmediadashboard.vercel.app/signup" target="_blank" rel="noopener"
+                    class="gradient-btn px-4 py-2 text-xs inline-flex items-center gap-2">
+                    <i data-lucide="calendar-check" class="w-3.5 h-3.5"></i> BOOK NOW
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content Area -->
+    <main class="flex-grow pt-28 pb-20 px-6 md:px-12">
+        <div class="max-w-5xl mx-auto space-y-10">
+
+            <!-- Breadcrumbs & Sector Selector Tabs -->
+            <div class="space-y-4">
+                <div class="flex items-center gap-2 text-xs font-mono text-zinc-500 font-bold uppercase">
+                    <a href="index.html" class="hover:text-black">Home</a>
+                    <span>/</span>
+                    <a href="policies.html" class="hover:text-black">Policies</a>
+                    <span>/</span>
+                    <span class="text-pink-600">Service Policy</span>
+                </div>
+
+                <h1 class="text-3xl sm:text-5xl font-black font-heading uppercase text-black">
+                    5. SERVICE POLICY<span class="text-pink-600">.</span>
+                </h1>
+                <p class="text-sm font-mono text-zinc-500 font-bold uppercase tracking-widest">
+                    SYNTH MEDIA AGENCY // EFFECTIVE DATE: 17 SEPTEMBER 2026
+                </p>
+
+                <!-- 5 Sector Navigation Bar -->
+                <div class="grid grid-cols-1 sm:grid-cols-5 gap-2 pt-4 border-b border-zinc-200 pb-6">
+                    <a href="terms-and-conditions.html"
+                        class="px-3 py-2.5 text-center text-xs font-heading font-bold uppercase tracking-wider bg-white text-zinc-700 hover:bg-zinc-50 rounded border border-zinc-200 transition-colors">
+                        1. Terms
+                    </a>
+                    <a href="payment-cancellation-refund-policy.html"
+                        class="px-3 py-2.5 text-center text-xs font-heading font-bold uppercase tracking-wider bg-white text-zinc-700 hover:bg-zinc-50 rounded border border-zinc-200 transition-colors">
+                        2. Payment &amp; Refund
+                    </a>
+                    <a href="privacy-policy.html"
+                        class="px-3 py-2.5 text-center text-xs font-heading font-bold uppercase tracking-wider bg-white text-zinc-700 hover:bg-zinc-50 rounded border border-zinc-200 transition-colors">
+                        3. Privacy
+                    </a>
+                    <a href="intellectual-property-revision-policy.html"
+                        class="px-3 py-2.5 text-center text-xs font-heading font-bold uppercase tracking-wider bg-white text-zinc-700 hover:bg-zinc-50 rounded border border-zinc-200 transition-colors">
+                        4. IP &amp; Revisions
+                    </a>
+                    <a href="service-policy.html"
+                        class="px-3 py-2.5 text-center text-xs font-heading font-bold uppercase tracking-wider bg-black text-white rounded border border-black shadow-sm">
+                        5. Services
+                    </a>
+                </div>
+            </div>
+
+            <!-- Policy Body Cards -->
+            <div class="space-y-8 text-sm leading-relaxed text-zinc-800">
+
+                <!-- Section 1 -->
+                <div class="p-6 bg-white border border-zinc-200 rounded-xl shadow-sm space-y-2">
+                    <h2 class="text-xl font-bold font-heading uppercase text-black flex items-center gap-2">
+                        <span class="w-2 h-2 rounded-full bg-pink-500"></span> 1. Purpose and Scope
+                    </h2>
+                    <p>This Service Policy explains the operational standards, ordering requirements, lead times,
+                        production workflows, delivery mechanisms and service-specific conditions for services provided
+                        by Synth Media Agency (“Synth”, “we”, “us” or “our”).</p>
+                    <p>This Policy forms part of Synth’s Terms &amp; Conditions and applies to all services offered
+                        through our website, dashboard and digital platforms.</p>
+                </div>
+
+                <!-- Section 2 -->
+                <div class="p-6 bg-white border border-zinc-200 rounded-xl shadow-sm space-y-2">
+                    <h2 class="text-xl font-bold font-heading uppercase text-black flex items-center gap-2">
+                        <span class="w-2 h-2 rounded-full bg-pink-500"></span> 2. Services Covered
+                    </h2>
+                    <p>Synth provides digital media, creative, marketing and technology services. These services may
+                        include, but are not limited to:</p>
+                    <ul class="list-disc pl-5 space-y-1">
+                        <li>Graphic Design Services</li>
+                        <li>Video Content Creation and Video Marketing</li>
+                        <li>Content Creation and Copywriting</li>
+                        <li>Social Media Management</li>
+                        <li>Business Branding Services</li>
+                        <li>Digital Marketing and Advertising</li>
+                        <li>Web Design and Development Services</li>
+                        <li>Technology Solutions and Support</li>
+                        <li>Custom digital, creative and technology packages</li>
+                    </ul>
+                </div>
+
+                <!-- Section 3 -->
+                <div class="p-6 bg-white border border-zinc-200 rounded-xl shadow-sm space-y-2">
+                    <h2 class="text-xl font-bold font-heading uppercase text-black flex items-center gap-2">
+                        <span class="w-2 h-2 rounded-full bg-pink-500"></span> 3. Service Ordering Process
+                    </h2>
+                    <p>Services must generally be ordered through the official Synth website or customer dashboard.</p>
+                    <p>The standard process involves:</p>
+                    <ol class="list-decimal pl-5 space-y-1">
+                        <li>Selecting the required service or package</li>
+                        <li>Providing complete project requirements and materials</li>
+                        <li>Submitting the order</li>
+                        <li>Making payment through the supported payment gateway (such as Paystack)</li>
+                        <li>Awaiting order confirmation</li>
+                        <li>Production and quality review</li>
+                        <li>Delivery of completed work through the customer dashboard</li>
+                    </ol>
+                    <p class="pt-1 font-medium">An order is not considered active for production purposes until payment
+                        has been successfully confirmed and the necessary brief/materials have been provided.</p>
+                </div>
+
+                <!-- Section 4 -->
+                <div class="p-6 bg-white border border-zinc-200 rounded-xl shadow-sm space-y-2">
+                    <h2 class="text-xl font-bold font-heading uppercase text-black flex items-center gap-2">
+                        <span class="w-2 h-2 rounded-full bg-pink-500"></span> 4. Project Brief and Requirements
+                    </h2>
+                    <p>Customers are required to provide clear, accurate and complete instructions when submitting an
+                        order.</p>
+                    <p>Required information may include brand guidelines, logos, text copy, high-resolution images,
+                        video clips, colour preferences, reference examples, preferred formats, target audience details,
+                        domain names, hosting credentials or other information necessary to complete the project.</p>
+                    <p>Synth is not responsible for production delays or errors resulting from vague, incomplete,
+                        inaccurate, conflicting or delayed instructions supplied by the customer.</p>
+                </div>
+
+                <!-- Section 5 -->
+                <div
+                    class="p-6 bg-white border border-zinc-200 rounded-xl shadow-sm space-y-2 font-medium bg-pink-50/30 border-pink-200">
+                    <h2 class="text-xl font-bold font-heading uppercase text-black flex items-center gap-2">
+                        <span class="w-2 h-2 rounded-full bg-pink-500"></span> 5. Minimum Lead Time
+                    </h2>
+                    <p>Customers may specify a requested project deadline when placing an order.</p>
+                    <p class="text-pink-700 font-bold">The minimum requested lead time for any service is three (3) days
+                        from the date production commences.</p>
+                    <p>Synth will not accept or guarantee a requested delivery time of less than three days unless Synth
+                        expressly agrees otherwise in writing.</p>
+                    <p>The three-day minimum is a baseline minimum and does not mean that every project will
+                        automatically be delivered in three days.</p>
+                    <p>Complex projects, large multi-page websites, custom software, extensive video editing, full
+                        branding suites, multi-asset marketing campaigns or orders requiring multiple revision rounds
+                        will naturally require longer production timelines.</p>
+                </div>
+
+                <!-- Section 6 -->
+                <div class="p-6 bg-white border border-zinc-200 rounded-xl shadow-sm space-y-2">
+                    <h2 class="text-xl font-bold font-heading uppercase text-black flex items-center gap-2">
+                        <span class="w-2 h-2 rounded-full bg-pink-500"></span> 6. Start of Production
+                    </h2>
+                    <p>Production timeline calculation begins only after ALL of the following conditions are met:</p>
+                    <ul class="list-disc pl-5 space-y-1">
+                        <li>Payment is successfully processed and confirmed</li>
+                        <li>The customer has submitted the complete project brief</li>
+                        <li>All essential assets, materials and credentials required for the project have been received
+                            by Synth</li>
+                    </ul>
+                    <p class="pt-1">If a customer delays supplying essential materials, the production start date and
+                        delivery schedule will be adjusted accordingly.</p>
+                </div>
+
+                <!-- Section 7 -->
+                <div class="p-6 bg-white border border-zinc-200 rounded-xl shadow-sm space-y-2">
+                    <h2 class="text-xl font-bold font-heading uppercase text-black flex items-center gap-2">
+                        <span class="w-2 h-2 rounded-full bg-pink-500"></span> 7. Service Timelines and Turnaround
+                    </h2>
+                    <p>Estimated turnaround times provided on package descriptions or order pages represent standard
+                        working estimates under normal operational conditions.</p>
+                    <p>Actual turnaround times may vary depending on: Project complexity and scope; Customer response
+                        time for feedback or approvals; Revisions requested; Technical requirements or third-party
+                        platform dependencies; Volume of active orders in production.</p>
+                    <p>Where a delay is anticipated, Synth will take reasonable steps to communicate with the customer.
+                    </p>
+                </div>
+
+                <!-- Section 8 -->
+                <div class="p-6 bg-white border border-zinc-200 rounded-xl shadow-sm space-y-2">
+                    <h2 class="text-xl font-bold font-heading uppercase text-black flex items-center gap-2">
+                        <span class="w-2 h-2 rounded-full bg-pink-500"></span> 8. Customer Responsibilities
+                    </h2>
+                    <p>To ensure successful project delivery, customers are responsible for:</p>
+                    <ul class="list-disc pl-5 space-y-1">
+                        <li>Providing accurate project information and assets</li>
+                        <li>Responding promptly to requests for clarification, feedback or approval</li>
+                        <li>Ensuring supplied materials do not infringe third-party rights</li>
+                        <li>Maintaining access to their registered email address and customer dashboard</li>
+                        <li>Reviewing delivered work within the specified review period</li>
+                    </ul>
+                </div>
+
+                <!-- Section 9 -->
+                <div class="p-6 bg-white border border-zinc-200 rounded-xl shadow-sm space-y-2">
+                    <h2 class="text-xl font-bold font-heading uppercase text-black flex items-center gap-2">
+                        <span class="w-2 h-2 rounded-full bg-pink-500"></span> 9. Customer Delays
+                    </h2>
+                    <p>If a customer fails to provide required assets, clarification or feedback for a period exceeding
+                        14 calendar days, Synth may place the project on hold.</p>
+                    <p>If the delay exceeds 30 calendar days without communication, Synth reserves the right to mark the
+                        order as paused or completed based on work completed to date.</p>
+                    <p>Reactivating a paused project may require rescheduling and may be subject to a reactivation fee
+                        where additional resources are required.</p>
+                </div>
+
+                <!-- Section 10 -->
+                <div class="p-6 bg-white border border-zinc-200 rounded-xl shadow-sm space-y-2">
+                    <h2 class="text-xl font-bold font-heading uppercase text-black flex items-center gap-2">
+                        <span class="w-2 h-2 rounded-full bg-pink-500"></span> 10. Revisions
+                    </h2>
+                    <p>Revisions are governed by the specific package allowance purchased by the customer and Synth’s
+                        Intellectual Property &amp; Revision Policy.</p>
+                    <p>A revision includes minor adjustments, corrections or refinements aligned with the original
+                        brief.</p>
+                    <p>Revisions do not include complete redesigns, new concepts, new briefs or work outside the
+                        purchased package scope.</p>
+                </div>
+
+                <!-- Section 11 -->
+                <div class="p-6 bg-white border border-zinc-200 rounded-xl shadow-sm space-y-2">
+                    <h2 class="text-xl font-bold font-heading uppercase text-black flex items-center gap-2">
+                        <span class="w-2 h-2 rounded-full bg-pink-500"></span> 11. Review and Approval
+                    </h2>
+                    <p>Before final delivery, completed work may undergo internal quality review by Synth.</p>
+                    <p>Work is then presented to the customer via the dashboard or email for review.</p>
+                    <p>Upon receiving delivered work, the customer has seven (7) calendar days to review and either
+                        approve the deliverable or request revisions within their package allowance.</p>
+                    <p>If no response or revision request is received within seven (7) calendar days, the deliverable
+                        may be deemed accepted and approved by the customer.</p>
+                </div>
+
+                <!-- Section 12 -->
+                <div class="p-6 bg-white border border-zinc-200 rounded-xl shadow-sm space-y-2">
+                    <h2 class="text-xl font-bold font-heading uppercase text-black flex items-center gap-2">
+                        <span class="w-2 h-2 rounded-full bg-pink-500"></span> 12. Delivery of Completed Work
+                    </h2>
+                    <p>Completed deliverables will generally be made available through the customer’s online dashboard
+                        for secure download.</p>
+                    <p>Email notifications may be sent to inform the customer when a deliverable is ready.</p>
+                    <p>Files will be delivered in standard industry formats specified in the package description (e.g.,
+                        PNG, JPG, MP4, PDF, ZIP, HTML/CSS/JS files).</p>
+                </div>
+
+                <!-- Section 13 -->
+                <div class="p-6 bg-white border border-zinc-200 rounded-xl shadow-sm space-y-2">
+                    <h2 class="text-xl font-bold font-heading uppercase text-black flex items-center gap-2">
+                        <span class="w-2 h-2 rounded-full bg-pink-500"></span> 13. Download and Access
+                    </h2>
+                    <p>Customers are responsible for downloading and backing up their completed files promptly upon
+                        delivery.</p>
+                    <p>While Synth strives to maintain dashboard availability, Synth is not an archival storage service
+                        and does not guarantee indefinite cloud hosting of completed customer files.</p>
+                </div>
+
+                <!-- Section 14 -->
+                <div class="p-6 bg-white border border-zinc-200 rounded-xl shadow-sm space-y-2">
+                    <h2 class="text-xl font-bold font-heading uppercase text-black flex items-center gap-2">
+                        <span class="w-2 h-2 rounded-full bg-pink-500"></span> 14. Graphic Design Services
+                    </h2>
+                    <p>Includes flyers, banners, social media graphics, posters, packaging designs and visual assets.
+                    </p>
+                    <p>Deliverables will be provided in digital formats (e.g., PNG, JPG, PDF).</p>
+                    <p>Print-ready setup is provided where specified in the package. Synth is not responsible for
+                        physical printing errors committed by external printing vendors.</p>
+                </div>
+
+                <!-- Section 15 -->
+                <div class="p-6 bg-white border border-zinc-200 rounded-xl shadow-sm space-y-2">
+                    <h2 class="text-xl font-bold font-heading uppercase text-black flex items-center gap-2">
+                        <span class="w-2 h-2 rounded-full bg-pink-500"></span> 15. Video and Content Creation Services
+                    </h2>
+                    <p>Includes video marketing, promo reels, motion graphics, AI-assisted video production and content
+                        creation.</p>
+                    <p>Final videos are delivered in digital video formats (such as MP4).</p>
+                    <p>Voiceover, stock footage, background music and specialized assets are included according to the
+                        package scope.</p>
+                </div>
+
+                <!-- Section 16 -->
+                <div class="p-6 bg-white border border-zinc-200 rounded-xl shadow-sm space-y-2">
+                    <h2 class="text-xl font-bold font-heading uppercase text-black flex items-center gap-2">
+                        <span class="w-2 h-2 rounded-full bg-pink-500"></span> 16. Branding Services
+                    </h2>
+                    <p>Includes logo design, brand identity suites, typography systems, colour palettes and brand
+                        guidelines.</p>
+                    <p>Logo vector files (AI, EPS, SVG) are provided where included in the purchased branding package.
+                    </p>
+                </div>
+
+                <!-- Section 17 -->
+                <div class="p-6 bg-white border border-zinc-200 rounded-xl shadow-sm space-y-2">
+                    <h2 class="text-xl font-bold font-heading uppercase text-black flex items-center gap-2">
+                        <span class="w-2 h-2 rounded-full bg-pink-500"></span> 17. Web Design and Development
+                    </h2>
+                    <p>Includes website design, landing page creation, web solutions and front-end/back-end development.
+                    </p>
+                    <p>Websites are developed to be responsive across modern devices and major web browsers.</p>
+                    <p>Domain registration, web hosting, third-party software subscriptions, SSL certificates and
+                        ongoing website maintenance are the customer’s responsibility unless specifically included in
+                        the purchased service package.</p>
+                </div>
+
+                <!-- Section 18 -->
+                <div class="p-6 bg-white border border-zinc-200 rounded-xl shadow-sm space-y-2">
+                    <h2 class="text-xl font-bold font-heading uppercase text-black flex items-center gap-2">
+                        <span class="w-2 h-2 rounded-full bg-pink-500"></span> 18. Social Media Management
+                    </h2>
+                    <p>Includes content planning, post creation, scheduling, caption writing and social account
+                        management as defined in the selected package.</p>
+                    <p>Customers must provide necessary account permissions or credentials required for post scheduling.
+                    </p>
+                    <p>Synth is not responsible for account suspensions or restrictions imposed by social media
+                        platforms due to pre-existing account standing or external policy violations.</p>
+                </div>
+
+                <!-- Section 19 -->
+                <div class="p-6 bg-white border border-zinc-200 rounded-xl shadow-sm space-y-2">
+                    <h2 class="text-xl font-bold font-heading uppercase text-black flex items-center gap-2">
+                        <span class="w-2 h-2 rounded-full bg-pink-500"></span> 19. Digital Marketing and Advertising
+                    </h2>
+                    <p>Includes ad campaign setup, ad creative production, audience targeting and performance
+                        monitoring.</p>
+                    <p>Ad spend budgets paid directly to advertising platforms (such as Meta Ads, Google Ads, TikTok
+                        Ads) are separate from Synth’s service setup fees unless explicitly bundled.</p>
+                    <p>Synth does not guarantee specific campaign conversion figures, ROI, follower counts or sales
+                        volume.</p>
+                </div>
+
+                <!-- Section 20 -->
+                <div class="p-6 bg-white border border-zinc-200 rounded-xl shadow-sm space-y-2">
+                    <h2 class="text-xl font-bold font-heading uppercase text-black flex items-center gap-2">
+                        <span class="w-2 h-2 rounded-full bg-pink-500"></span> 20. Technology Solutions and Support
+                    </h2>
+                    <p>Includes digital tool setup, automation workflows, AI tool integration, technical consultation
+                        and support services.</p>
+                    <p>Technical support scope and hours are defined in the purchased service agreement.</p>
+                </div>
+
+                <!-- Section 21 -->
+                <div class="p-6 bg-white border border-zinc-200 rounded-xl shadow-sm space-y-2">
+                    <h2 class="text-xl font-bold font-heading uppercase text-black flex items-center gap-2">
+                        <span class="w-2 h-2 rounded-full bg-pink-500"></span> 21. Third-Party Platforms
+                    </h2>
+                    <p>Synth services may rely on third-party platforms (e.g., Paystack, Meta, Google, Vercel, Supabase,
+                        OpenAI, hosting providers).</p>
+                    <p>Synth is not liable for service outages, policy modifications, algorithm updates or restrictions
+                        caused independently by third-party platforms.</p>
+                </div>
+
+                <!-- Section 22 -->
+                <div class="p-6 bg-white border border-zinc-200 rounded-xl shadow-sm space-y-2">
+                    <h2 class="text-xl font-bold font-heading uppercase text-black flex items-center gap-2">
+                        <span class="w-2 h-2 rounded-full bg-pink-500"></span> 22. Customer Accounts and Access
+                    </h2>
+                    <p>Customers must maintain secure passwords for their Synth dashboard and third-party services
+                        connected to their project.</p>
+                </div>
+
+                <!-- Section 23 -->
+                <div class="p-6 bg-white border border-zinc-200 rounded-xl shadow-sm space-y-2">
+                    <h2 class="text-xl font-bold font-heading uppercase text-black flex items-center gap-2">
+                        <span class="w-2 h-2 rounded-full bg-pink-500"></span> 23. Service Availability
+                    </h2>
+                    <p>Synth strives to maintain high availability of its website and customer dashboard, but temporary
+                        downtime for maintenance or updates may occur.</p>
+                </div>
+
+                <!-- Section 24 -->
+                <div class="p-6 bg-white border border-zinc-200 rounded-xl shadow-sm space-y-2">
+                    <h2 class="text-xl font-bold font-heading uppercase text-black flex items-center gap-2">
+                        <span class="w-2 h-2 rounded-full bg-pink-500"></span> 24. Service Limitations
+                    </h2>
+                    <p>Synth provides professional agency services but does not guarantee specific commercial outcomes,
+                        sales targets or platform growth metrics.</p>
+                </div>
+
+                <!-- Section 25 -->
+                <div class="p-6 bg-white border border-zinc-200 rounded-xl shadow-sm space-y-2">
+                    <h2 class="text-xl font-bold font-heading uppercase text-black flex items-center gap-2">
+                        <span class="w-2 h-2 rounded-full bg-pink-500"></span> 25. Prohibited or Unlawful Requests
+                    </h2>
+                    <p>Synth strictly refuses orders involving illegal content, fraudulent activities, deceptive
+                        marketing, hate speech or infringement of third-party rights.</p>
+                </div>
+
+                <!-- Section 26 -->
+                <div class="p-6 bg-white border border-zinc-200 rounded-xl shadow-sm space-y-2">
+                    <h2 class="text-xl font-bold font-heading uppercase text-black flex items-center gap-2">
+                        <span class="w-2 h-2 rounded-full bg-pink-500"></span> 26. Project Cancellation or Suspension by
+                        Synth
+                    </h2>
+                    <p>Synth reserves the right to suspend or cancel an order in cases of breach of terms, non-payment,
+                        unlawful requests or abusive behaviour towards staff.</p>
+                </div>
+
+                <!-- Section 27 -->
+                <div class="p-6 bg-white border border-zinc-200 rounded-xl shadow-sm space-y-2">
+                    <h2 class="text-xl font-bold font-heading uppercase text-black flex items-center gap-2">
+                        <span class="w-2 h-2 rounded-full bg-pink-500"></span> 27. Quality Concerns and Corrections
+                    </h2>
+                    <p>If a delivered service contains technical errors or fails to follow the agreed brief, the
+                        customer must notify Synth within the seven-day review window for prompt correction.</p>
+                </div>
+
+                <!-- Section 28 -->
+                <div class="p-6 bg-white border border-zinc-200 rounded-xl shadow-sm space-y-2">
+                    <h2 class="text-xl font-bold font-heading uppercase text-black flex items-center gap-2">
+                        <span class="w-2 h-2 rounded-full bg-pink-500"></span> 28. Customer Feedback
+                    </h2>
+                    <p>We welcome feedback to continuously improve our agency standards and service quality.</p>
+                </div>
+
+                <!-- Section 29 -->
+                <div class="p-6 bg-white border border-zinc-200 rounded-xl shadow-sm space-y-2">
+                    <h2 class="text-xl font-bold font-heading uppercase text-black flex items-center gap-2">
+                        <span class="w-2 h-2 rounded-full bg-pink-500"></span> 29. Exceptional Circumstances and Force
+                        Majeure
+                    </h2>
+                    <p>Synth is not liable for delays caused by national infrastructure failures, power outages, severe
+                        weather, government acts or major cyber incidents.</p>
+                </div>
+
+                <!-- Section 30 -->
+                <div class="p-6 bg-white border border-zinc-200 rounded-xl shadow-sm space-y-2">
+                    <h2 class="text-xl font-bold font-heading uppercase text-black flex items-center gap-2">
+                        <span class="w-2 h-2 rounded-full bg-pink-500"></span> 30. Relationship With Package
+                        Descriptions
+                    </h2>
+                    <p>Specific deliverable counts, feature lists and turnaround times defined in individual package
+                        descriptions take precedence over general defaults.</p>
+                </div>
+
+                <!-- Section 31 -->
+                <div class="p-6 bg-white border border-zinc-200 rounded-xl shadow-sm space-y-2">
+                    <h2 class="text-xl font-bold font-heading uppercase text-black flex items-center gap-2">
+                        <span class="w-2 h-2 rounded-full bg-pink-500"></span> 31. Relationship With Other Synth
+                        Policies
+                    </h2>
+                    <p>This Service Policy operates alongside Synth Media Agency’s Terms &amp; Conditions, Payment &amp;
+                        Refund Policy, Privacy Policy and IP &amp; Revision Policy.</p>
+                </div>
+
+                <!-- Section 32 -->
+                <div class="p-6 bg-white border border-zinc-200 rounded-xl shadow-sm space-y-2">
+                    <h2 class="text-xl font-bold font-heading uppercase text-black flex items-center gap-2">
+                        <span class="w-2 h-2 rounded-full bg-pink-500"></span> 32. Changes to This Policy
+                    </h2>
+                    <p>Synth may update this Service Policy periodically. The effective date at the top of the policy
+                        indicates the date of the latest revision.</p>
+                </div>
+
+                <!-- Section 33 -->
+                <div class="p-6 bg-black text-white rounded-xl shadow-md space-y-3">
+                    <h2 class="text-xl font-bold font-heading uppercase text-white flex items-center gap-2">
+                        <i data-lucide="mail" class="w-5 h-5 text-pink-500"></i> 33. Contact
+                    </h2>
+                    <p class="font-bold">Synth Media Agency</p>
+                    <p>Website: <a href="https://synthmediaagency.eu.org"
+                            class="underline text-pink-400">synthmediaagency.eu.org</a></p>
+                    <p>Email: synthagency1235@gmail.com</p>
+                    <p>Phone/WhatsApp: 08110923670</p>
+                </div>
+
+            </div>
+
+            <!-- Bottom Next / Previous Page Controls -->
+            <div class="pt-10 border-t border-zinc-200 flex flex-col sm:flex-row items-center justify-between gap-4">
+                <a href="intellectual-property-revision-policy.html"
+                    class="gradient-btn-outline px-6 py-3.5 text-xs w-full sm:w-auto justify-center inline-flex items-center gap-2">
+                    <i data-lucide="arrow-left" class="w-4 h-4"></i> PREVIOUS: IP &amp; REVISIONS
+                </a>
+                <div class="text-xs font-mono text-zinc-500 font-bold uppercase">SECTOR 5 OF 5</div>
+                <a href="terms-and-conditions.html"
+                    class="gradient-btn px-6 py-3.5 text-xs w-full sm:w-auto justify-center inline-flex items-center gap-2">
+                    BACK TO SECTOR 1: TERMS &amp; CONDITIONS <i data-lucide="rotate-ccw" class="w-4 h-4"></i>
+                </a>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Minimalist Footer -->
+    <footer class="py-12 px-6 md:px-12 bg-white border-t border-zinc-200 text-xs text-black">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
+            <div class="flex items-center gap-3">
+                <img src="assets/images/general/synth-logo.svg" alt="Synth Logo" class="w-6 h-6">
+                <span class="font-heading font-bold text-sm">SYNTH MEDIA AGENCY &copy; 2026</span>
+            </div>
+            <div class="flex flex-wrap gap-4 text-xs font-mono font-bold text-zinc-500">
+                <a href="terms-and-conditions.html" class="hover:text-black">Terms &amp; Conditions</a> &bull;
+                <a href="payment-cancellation-refund-policy.html" class="hover:text-black">Payment &amp; Refund
+                    Policy</a> &bull;
+                <a href="privacy-policy.html" class="hover:text-black">Privacy Policy</a> &bull;
+                <a href="intellectual-property-revision-policy.html" class="hover:text-black">IP &amp; Revision
+                    Policy</a> &bull;
+                <a href="service-policy.html" class="text-black underline">Service Policy</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+
+</html>
