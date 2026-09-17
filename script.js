@@ -24,161 +24,161 @@ const SYNTH_CONFIG = {
         linkedin: "#"   // Replace with real LinkedIn URL
     },
 
-    // 12 Portfolio Concept Projects — High-Quality Realistic Works Across All Categories
+    // 12 High-Impact Agency Portfolio Works — Fictional & Retained Real Clients
     PROJECTS: [
         {
             id: "proj-01",
-            title: "LUXE HOSPITALITY REBRAND",
+            title: "VERIDIAN BANK DIGITAL REBRAND",
             category: "BRANDING",
             year: "2026",
             image: "assets/images/portfolio/portfolio-01.svg",
-            description: "Complete brand identity overhaul for a 5-star hotel chain across 3 continents. Delivered logo system, typography, color palette, brand guidelines, signage, collateral, and digital asset library. Unified fragmented visual language into a cohesive premium identity.",
-            client: "Aurelia Hotels & Resorts",
-            type: "Brand Identity & Strategy",
-            tags: ["Branding", "Brand Strategy", "Design System", "Art Direction"],
+            description: "Digital brand refresh and mobile banking experience design system for Veridian Bank. Created responsive visual guidelines, icon systems, social media assets, and branch kiosk motion designs.",
+            client: "Veridian Bank Nigeria",
+            type: "Brand Identity & Digital Strategy",
+            tags: ["Branding", "Brand Strategy", "Design System", "Banking"],
             spanClass: "col-span-8 aspect-wide",
             liveUrl: ""
         },
         {
             id: "proj-02",
-            title: "TECH STARTUP VISUAL IDENTITY",
+            title: "PAYRIVER MERCHANT LAUNCH",
             category: "BRANDING",
             year: "2025",
             image: "assets/images/portfolio/portfolio-02.svg",
-            description: "Ground-up brand creation for a Series A fintech startup. Developed name, logo, motion identity, pitch deck templates, and developer-facing documentation style. Positioned for investor confidence and developer adoption.",
-            client: "Vellum Pay (Stealth)",
-            type: "Startup Branding",
-            tags: ["Branding", "Naming", "Motion Design", "Pitch Design"],
+            description: "Visual identity and launch collateral for PayRiver's SME Merchant Suite in West Africa. Developed campaign graphics, onboarding guides, pitch decks, and digital ad suites.",
+            client: "PayRiver Technologies",
+            type: "Fintech Product Branding",
+            tags: ["Branding", "Fintech", "Product Launch", "Visual Identity"],
             spanClass: "col-span-4 aspect-portrait",
             liveUrl: ""
         },
         {
             id: "proj-03",
-            title: "GLOBAL BEAUTY CAMPAIGN",
+            title: "KROWN BREWS NIGERIA CAMPAIGN",
             category: "ADVERTISING",
             year: "2026",
             image: "assets/images/portfolio/portfolio-03.svg",
-            description: "Multi-market advertising campaign for a global cosmetics brand spanning 12 countries. Produced 200+ assets: hero film, OOH billboards, social cuts, influencer kits, and retail POP. Achieved 47% lift in brand recall.",
-            client: "Viora Cosmetics",
+            description: "Nationwide advertising campaign celebrating youth culture, music, and creative expression. Produced 150+ campaign assets including billboard artwork, radio jingles, and Lagos night-culture activations.",
+            client: "Krown Beverage Group",
             type: "Integrated Ad Campaign",
-            tags: ["Advertising", "Art Direction", "Film Production", "OOH"],
+            tags: ["Advertising", "Outdoor/OOH", "Culture Marketing", "Production"],
             spanClass: "col-span-8 aspect-wide",
             liveUrl: ""
         },
         {
             id: "proj-04",
-            title: "DTC APPAREL LAUNCH CAMPAIGN",
+            title: "AMPLIFY CEMENT BUILDERS CLUB",
             category: "CAMPAIGNS",
             year: "2026",
             image: "assets/images/portfolio/portfolio-04.svg",
-            description: "End-to-end launch campaign for a direct-to-consumer sustainable fashion label. Orchestrated pre-launch teaser phase, founder story film, email/SMS flows, paid social, and PR push. Generated $2.1M revenue in first 30 days.",
-            client: "Kindred Threads",
-            type: "Product Launch Campaign",
-            tags: ["Campaigns", "Creative Strategy", "Paid Social", "Email Marketing"],
+            description: "360-degree promotional campaign and loyalty platform launch for Amplify Cement distributors and contractors across Nigeria. Delivered TV commercials, WhatsApp automation flows, and roadshow branding.",
+            client: "Amplify Industrial Group",
+            type: "Nationwide B2B Campaign",
+            tags: ["Campaigns", "Creative Strategy", "B2B Marketing", "Activation"],
             spanClass: "col-span-6 aspect-wide",
             liveUrl: ""
         },
         {
             id: "proj-05",
-            title: "SOCIAL ECOSYSTEM OVERHAUL",
+            title: "NEXUS TELECOM 5G EXPANSION",
             category: "SOCIAL MEDIA",
             year: "2026",
             image: "assets/images/portfolio/portfolio-05.svg",
-            description: "Full social media transformation for a mid-market B2B SaaS company. Built content pillars, editorial calendar, community management SOPs, and employee advocacy program. Grew LinkedIn followers 340% and inbound leads 68% in 6 months.",
-            client: "Apex Analytics",
+            description: "Social media ecosystem management for Nexus Telecom's 5G rollout. Created daily content pillars, influencer coordination, Twitter/X space activations, and interactive AR filter campaigns.",
+            client: "Nexus Telecom Nigeria",
             type: "Social Media Management",
-            tags: ["Social Media", "B2B Content", "Community", "Lead Gen"],
+            tags: ["Social Media", "Telecom", "Community Management", "Influencers"],
             spanClass: "col-span-4 aspect-portrait",
             liveUrl: ""
         },
         {
             id: "proj-06",
-            title: "CREATOR ECONOMY GROWTH",
+            title: "KASHMONI CASHBACK FESTIVAL",
             category: "SOCIAL MEDIA",
             year: "2025",
             image: "assets/images/portfolio/portfolio-06.svg",
-            description: "Audience growth and monetization strategy for a top 0.1% lifestyle creator. Designed content architecture across TikTok, Reels, Shorts, and YouTube. Implemented sponsorship packaging, product drops, and membership funnel. Revenue up 3.2x YoY.",
-            client: "Mara Lin (Creator)",
-            type: "Creator Growth Strategy",
-            tags: ["Social Media", "Creator Economy", "Monetization", "Video Strategy"],
+            description: "High-virality social media strategy and creator marketing push for KashMoni's annual promotional festival. Produced viral TikTok skits, Instagram Reels, and user-generated content challenges.",
+            client: "KashMoni Digital Services",
+            type: "Viral Social Campaign",
+            tags: ["Social Media", "Short Video", "Viral Growth", "Fintech"],
             spanClass: "col-span-4 aspect-portrait",
             liveUrl: ""
         },
         {
             id: "proj-07",
-            title: "EDITORIAL DESIGN SYSTEM",
+            title: "AUTOVAN MOTORS DESIGN SYSTEM",
             category: "DESIGN",
             year: "2026",
             image: "assets/images/portfolio/portfolio-07.svg",
-            description: "Comprehensive design system for a digital publishing platform serving 5M+ monthly readers. Created component library, typographic scale, color tokens, motion specs, and Figma/Storybook integration. Reduced design-to-dev handoff time by 60%.",
-            client: "Meridian Publishing",
+            description: "Modern digital UI design system and dealership brochure suite for AutoVan Vehicle Manufacturing. Crafted digital vehicle configurators, showroom catalog layouts, and typography guidelines.",
+            client: "AutoVan Industries",
             type: "Design System & UI",
-            tags: ["Design", "Design Systems", "UI/UX", "Figma"],
+            tags: ["Design", "Automotive", "UI/UX", "Editorial Design"],
             spanClass: "col-span-6 aspect-wide",
             liveUrl: ""
         },
         {
             id: "proj-08",
-            title: "MOTION BRAND TOOLKIT",
+            title: "EKO FASHION WEEK MOTION BRAND",
             category: "DESIGN",
             year: "2025",
             image: "assets/images/portfolio/portfolio-08.svg",
-            description: "Motion design language and reusable animation library for a global entertainment brand. Defined easing curves, transition patterns, logo animations, lower-thirds, and template system for in-house teams. Shipped as Lottie + After Effects package.",
-            client: "Nova Studios",
-            type: "Motion Design System",
-            tags: ["Design", "Motion Design", "Animation", "Brand Motion"],
+            description: "Dynamic motion graphics design language and runway backdrop visuals for Eko Fashion Week. Created logo loops, designer introduction videos, and broadcast graphics package for web streaming.",
+            client: "Eko Fashion Collective",
+            type: "Motion Design & Event Branding",
+            tags: ["Design", "Motion Design", "Fashion", "Event Visuals"],
             spanClass: "col-span-6 aspect-wide",
             liveUrl: ""
         },
         {
             id: "proj-09",
-            title: "DOCUMENTARY SERIES PRODUCTION",
+            title: "ABIA STATE WOMEN DATA PORTAL",
             category: "CONTENT",
             year: "2026",
             image: "assets/images/portfolio/portfolio-09.svg",
-            description: "6-episode branded documentary series exploring African tech ecosystems. Handled creative development, production management, post-production, and distribution strategy across YouTube, streaming platforms, and airline entertainment. 12M+ views.",
-            client: "African Development Bank",
-            type: "Documentary Production",
-            tags: ["Content", "Video Production", "Documentary", "Distribution"],
+            description: "Documentary storytelling and visual media archive for government social welfare initiatives. Produced impact video stories, photo essays, and public awareness media covering women empowerment programs.",
+            client: "Abia State Ministry of Women Affairs",
+            type: "Government Impact Documentary",
+            tags: ["Content", "Documentary", "Public Sector", "Storytelling"],
             spanClass: "col-span-8 aspect-wide",
             liveUrl: ""
         },
         {
             id: "proj-10",
-            title: "SHORT-FORM CONTENT ENGINE",
+            title: "EL-OLAM NGO ADVOCACY REELS",
             category: "CONTENT",
             year: "2025",
             image: "assets/images/portfolio/portfolio-10.svg",
-            description: "Scalable short-form video production system for a consumer health brand. Built creative templates, batch shooting workflows, AI-assisted editing pipeline, and platform-specific optimization. Delivering 60+ Reels/TikToks/Shorts monthly at 1/3 typical cost.",
-            client: "Vitality Labs",
-            type: "Short-Form Video Production",
-            tags: ["Content", "Short Video", "AI Production", "Social Video"],
+            description: "AI-assisted short-form video production engine for disability advocacy NGO. Created 40+ educational video reels, donor spotlight stories, and social campaign snippets.",
+            client: "El-Olam Special Home and Rehabilitation Center",
+            type: "NGO Short Video Engine",
+            tags: ["Content", "Short Video", "Advocacy", "Social Impact"],
             spanClass: "col-span-4 aspect-portrait",
             liveUrl: ""
         },
         {
             id: "proj-11",
-            title: "ENTERPRISE WEB PLATFORM",
+            title: "AZURE RESORTS & BEACH WEB PLATFORM",
             category: "WEB DEVELOPMENT",
             year: "2026",
             image: "assets/images/portfolio/portfolio-11.svg",
-            description: "Custom enterprise web application for a logistics conglomerate. Built with Next.js, TypeScript, PostgreSQL, and real-time tracking. Includes role-based dashboards, API integrations, multi-tenant architecture, and 99.9% uptime SLA.",
-            client: "TransGlobal Logistics",
-            type: "Web Application Development",
-            tags: ["Web Development", "Next.js", "TypeScript", "Enterprise"],
+            description: "Custom, high-performance web portal for Azure Resorts' flagship luxury destination in Lagos. Built booking systems, event calendars, and interactive resort maps with 99.9% uptime.",
+            client: "Azure Hospitality Group",
+            type: "Web Portal & Booking System",
+            tags: ["Web Development", "Hospitality", "Next.js", "E-Commerce"],
             spanClass: "col-span-8 aspect-wide",
             liveUrl: ""
         },
         {
             id: "proj-12",
-            title: "AI-POWERED AUTOMATION SUITE",
+            title: "EXPRESS LOGISTICS AI AUTOMATION",
             category: "TECHNOLOGY",
             year: "2026",
             image: "assets/images/portfolio/portfolio-12.svg",
-            description: "Intelligent business automation platform combining RPA, LLM-powered document processing, and custom workflows. Reduced manual processing time 87% for a financial services client. Includes admin dashboard, audit trails, and SOC2-ready infrastructure.",
-            client: "Meridian Capital Partners",
-            type: "Digital Solutions & AI",
-            tags: ["Technology", "AI/ML", "Automation", "RPA", "SOC2"],
+            description: "Intelligent package tracking and automated customer support integration for e-commerce logistics. Streamlined order updates via automated WhatsApp, SMS, and web dashboards.",
+            client: "Express Parcel Services",
+            type: "Technology & AI Automation",
+            tags: ["Technology", "AI Solutions", "E-Commerce", "Logistics"],
             spanClass: "col-span-6 aspect-wide",
             liveUrl: ""
         }
@@ -335,13 +335,13 @@ function renderPortfolioGrid(filterCategory = "ALL") {
         itemEl.innerHTML = `
       <div class="portfolio-item-image-wrapper">
         <img src="${proj.image}" alt="${proj.title}" class="portfolio-item-image" loading="lazy" />
-        <div class="absolute inset-0 bg-gradient-to-t from-white/90 via-white/20 to-transparent opacity-80 group-hover:opacity-40 transition-opacity"></div>
-        <div class="absolute top-4 right-4 bg-white/90 border border-zinc-200 text-black text-[10px] font-heading font-bold uppercase tracking-widest px-3 py-1 backdrop-blur-md shadow-sm">
+        <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent"></div>
+        <div class="absolute top-4 right-4 bg-black/80 border border-zinc-700 text-white text-[10px] font-heading font-bold uppercase tracking-widest px-3 py-1 backdrop-blur-md shadow-md">
           ${proj.category}
         </div>
-        <div class="absolute bottom-6 left-6 right-6 flex flex-col justify-end">
-          <span class="text-xs font-semibold text-zinc-600 tracking-widest uppercase mb-1">${proj.year} — ${proj.client}</span>
-          <h3 class="text-xl md:text-2xl font-bold font-heading text-black group-hover:translate-x-2 transition-transform duration-300">
+        <div class="absolute bottom-6 left-6 right-6 flex flex-col justify-end text-white">
+          <span class="text-xs font-semibold text-zinc-300 tracking-widest uppercase mb-1">${proj.year} — ${proj.client}</span>
+          <h3 class="text-xl md:text-2xl font-bold font-heading text-white group-hover:translate-x-2 transition-transform duration-300 drop-shadow-md">
             ${proj.title}
           </h3>
         </div>
