@@ -1405,22 +1405,27 @@
       </div>
 
     </div>
-  </footer>
+    <!-- Promotional Modal -->
+    <div id="synth-promo-modal" class="synth-promo-overlay hidden" aria-hidden="true" role="dialog" aria-modal="true">
+      <div class="synth-promo-backdrop" id="synth-promo-backdrop"></div>
+      <div class="synth-promo-container">
+        <button type="button" id="synth-promo-close" class="synth-promo-close-btn" aria-label="Close promotion">
+          &times;
+        </button>
+        <div class="synth-promo-media">
+          <img src="assets/images/general/promo-artwork.jpg" alt="How to Book Our Services - Synth Media Agency"
+            class="synth-promo-img">
+        </div>
+      </div>
+    </div>
 
-  <!-- Floating WhatsApp CTA Button -->
-  <a href="https://wa.me/2348110923670" target="_blank" rel="noopener" class="whatsapp-float"
-    aria-label="Chat with Synth on WhatsApp">
-    <span class="whatsapp-tooltip font-heading">CHAT WITH SYNTH</span>
-    <i data-lucide="message-circle" class="w-6 h-6 text-white"></i>
-  </a>
-
-  <!-- Script Initializer -->
-  <script src="script.js"></script>
-  <script>
-    if (typeof lucide !== 'undefined') {
-      lucide.createIcons();
-    }
-  </script>
+    <!-- Script Initializer -->
+    <script src="script.js"></script>
+    <script>
+      if (typeof lucide !== 'undefined') {
+        lucide.createIcons();
+      }
+    </script>
 </body>
 
 </html>

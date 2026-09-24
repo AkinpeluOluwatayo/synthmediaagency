@@ -199,6 +199,7 @@ document.addEventListener("DOMContentLoaded", () => {
     initPortfolioModal();
     initGSAPAnimations();
     initContactForm();
+    initPromoModal();
 });
 
 /* --------------------------------------------------------------------------
@@ -691,6 +692,68 @@ window.synthVideoFileFallback = function (videoEl, key) {
     const fbUrl = key === 'video2' ? window.SYNTH_VIDEOS.fb_video2 : window.SYNTH_VIDEOS.fb_video1;
     window.synthPlayVideo(fbUrl);
 };
+
+/* --------------------------------------------------------------------------
+   10. Promotional Popup Modal System (24-Hour Persistence)
+   -------------------------------------------------------------------------- */
+function initPromoModal() {
+    const modal = document.getElementById("synth-promo-modal");
+    const closeBtn = document.getElementById("synth-promo-close");
+    const backdrop = document.getElementById("synth-promo-backdrop");
+
+    if (!modal) return;
+
+    const STORAGE_KEY = "synth_promo_last_seen";
+    const TWENTY_FOUR_HOURS_MS = 24 * 60 * 60 * 1000;
+
+    const lastSeenStr = localStorage.getItem(STORAGE_KEY);
+    const now = Date.now();
+
+    let shouldShow = true;
+    if (lastSeenStr) {
+        const lastSeen = parseInt(lastSeenStr, 10);
+        if (!isNaN(lastSeen) && (now - lastSeen < TWENTY_FOUR_HOURS_MS)) {
+            shouldShow = false;
+        }
+    }
+
+    const openModal = () => {
+        modal.classList.remove("hidden");
+        // Trigger reflow to enable transition
+        void modal.offsetWidth;
+        modal.classList.add("active");
+        modal.setAttribute("aria-hidden", "false");
+        document.body.style.overflow = "hidden";
+    };
+
+    const closeModal = () => {
+        modal.classList.remove("active");
+        modal.setAttribute("aria-hidden", "true");
+        document.body.style.overflow = "";
+
+        // Record timestamp of closure/viewing
+        localStorage.setItem(STORAGE_KEY, Date.now().toString());
+
+        setTimeout(() => {
+            modal.classList.add("hidden");
+        }, 350);
+    };
+
+    if (shouldShow) {
+        // Subtle delay for smooth page load appearance
+        setTimeout(openModal, 600);
+    }
+
+    if (closeBtn) closeBtn.addEventListener("click", closeModal);
+    if (backdrop) backdrop.addEventListener("click", closeModal);
+
+    document.addEventListener("keydown", (e) => {
+        if (e.key === "Escape" && modal.classList.contains("active")) {
+            closeModal();
+        }
+    });
+}
+
 
 
 
