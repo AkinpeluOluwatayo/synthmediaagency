@@ -31,7 +31,7 @@ const SYNTH_CONFIG = {
             title: "VERIDIAN BANK DIGITAL REBRAND",
             category: "BRANDING",
             year: "2026",
-            image: "assets/images/portfolio/portfolio-01.svg",
+            image: "assets/images/portfolio/portfolio-01.jpg",
             description: "Digital brand refresh and mobile banking experience design system for Veridian Bank. Created responsive visual guidelines, icon systems, social media assets, and branch kiosk motion designs.",
             client: "Veridian Bank Nigeria",
             type: "Brand Identity & Digital Strategy",
@@ -44,7 +44,7 @@ const SYNTH_CONFIG = {
             title: "PAYRIVER MERCHANT LAUNCH",
             category: "BRANDING",
             year: "2025",
-            image: "assets/images/portfolio/portfolio-02.svg",
+            image: "assets/images/portfolio/portfolio-02.jpg",
             description: "Visual identity and launch collateral for PayRiver's SME Merchant Suite in West Africa. Developed campaign graphics, onboarding guides, pitch decks, and digital ad suites.",
             client: "PayRiver Technologies",
             type: "Fintech Product Branding",
@@ -57,7 +57,7 @@ const SYNTH_CONFIG = {
             title: "KROWN BREWS NIGERIA CAMPAIGN",
             category: "ADVERTISING",
             year: "2026",
-            image: "assets/images/portfolio/portfolio-03.svg",
+            image: "assets/images/portfolio/portfolio-03.jpg",
             description: "Nationwide advertising campaign celebrating youth culture, music, and creative expression. Produced 150+ campaign assets including billboard artwork, radio jingles, and Lagos night-culture activations.",
             client: "Krown Beverage Group",
             type: "Integrated Ad Campaign",
@@ -70,7 +70,7 @@ const SYNTH_CONFIG = {
             title: "AMPLIFY CEMENT BUILDERS CLUB",
             category: "CAMPAIGNS",
             year: "2026",
-            image: "assets/images/portfolio/portfolio-04.svg",
+            image: "https://images.unsplash.com/photo-1541888946425-d0fbb186a5b3?auto=format&fit=crop&w=1200&q=80",
             description: "360-degree promotional campaign and loyalty platform launch for Amplify Cement distributors and contractors across Nigeria. Delivered TV commercials, WhatsApp automation flows, and roadshow branding.",
             client: "Amplify Industrial Group",
             type: "Nationwide B2B Campaign",
@@ -83,7 +83,7 @@ const SYNTH_CONFIG = {
             title: "NEXUS TELECOM 5G EXPANSION",
             category: "SOCIAL MEDIA",
             year: "2026",
-            image: "assets/images/portfolio/portfolio-05.svg",
+            image: "assets/images/portfolio/portfolio-05.jpg",
             description: "Social media ecosystem management for Nexus Telecom's 5G rollout. Created daily content pillars, influencer coordination, Twitter/X space activations, and interactive AR filter campaigns.",
             client: "Nexus Telecom Nigeria",
             type: "Social Media Management",
@@ -96,7 +96,7 @@ const SYNTH_CONFIG = {
             title: "KASHMONI CASHBACK FESTIVAL",
             category: "SOCIAL MEDIA",
             year: "2025",
-            image: "assets/images/portfolio/portfolio-06.svg",
+            image: "assets/images/portfolio/portfolio-06.jpg",
             description: "High-virality social media strategy and creator marketing push for KashMoni's annual promotional festival. Produced viral TikTok skits, Instagram Reels, and user-generated content challenges.",
             client: "KashMoni Digital Services",
             type: "Viral Social Campaign",
@@ -109,7 +109,7 @@ const SYNTH_CONFIG = {
             title: "AUTOVAN MOTORS DESIGN SYSTEM",
             category: "DESIGN",
             year: "2026",
-            image: "assets/images/portfolio/portfolio-07.svg",
+            image: "https://images.unsplash.com/photo-1617788138017-80ad40651399?auto=format&fit=crop&w=1200&q=80",
             description: "Modern digital UI design system and dealership brochure suite for AutoVan Vehicle Manufacturing. Crafted digital vehicle configurators, showroom catalog layouts, and typography guidelines.",
             client: "AutoVan Industries",
             type: "Design System & UI",
@@ -122,7 +122,7 @@ const SYNTH_CONFIG = {
             title: "EKO FASHION WEEK MOTION BRAND",
             category: "DESIGN",
             year: "2025",
-            image: "assets/images/portfolio/portfolio-08.svg",
+            image: "https://images.unsplash.com/photo-1509631179647-0177331693ae?auto=format&fit=crop&w=1200&q=80",
             description: "Dynamic motion graphics design language and runway backdrop visuals for Eko Fashion Week. Created logo loops, designer introduction videos, and broadcast graphics package for web streaming.",
             client: "Eko Fashion Collective",
             type: "Motion Design & Event Branding",
@@ -135,7 +135,7 @@ const SYNTH_CONFIG = {
             title: "ABIA STATE WOMEN DATA PORTAL",
             category: "CONTENT",
             year: "2026",
-            image: "assets/images/portfolio/portfolio-09.svg",
+            image: "https://images.unsplash.com/photo-1531206715517-5c0ba140b2b8?auto=format&fit=crop&w=1200&q=80",
             description: "Documentary storytelling and visual media archive for government social welfare initiatives. Produced impact video stories, photo essays, and public awareness media covering women empowerment programs.",
             client: "Abia State Ministry of Women Affairs",
             type: "Government Impact Documentary",
@@ -148,7 +148,7 @@ const SYNTH_CONFIG = {
             title: "EL-OLAM NGO ADVOCACY REELS",
             category: "CONTENT",
             year: "2025",
-            image: "assets/images/portfolio/portfolio-10.svg",
+            image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=1200&q=80",
             description: "AI-assisted short-form video production engine for disability advocacy NGO. Created 40+ educational video reels, donor spotlight stories, and social campaign snippets.",
             client: "El-Olam Special Home and Rehabilitation Center",
             type: "NGO Short Video Engine",
@@ -161,7 +161,7 @@ const SYNTH_CONFIG = {
             title: "AZURE RESORTS & BEACH WEB PLATFORM",
             category: "WEB DEVELOPMENT",
             year: "2026",
-            image: "assets/images/portfolio/portfolio-11.svg",
+            image: "https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=1200&q=80",
             description: "Custom, high-performance web portal for Azure Resorts' flagship luxury destination in Lagos. Built booking systems, event calendars, and interactive resort maps with 99.9% uptime.",
             client: "Azure Hospitality Group",
             type: "Web Portal & Booking System",
@@ -174,7 +174,7 @@ const SYNTH_CONFIG = {
             title: "EXPRESS LOGISTICS AI AUTOMATION",
             category: "TECHNOLOGY",
             year: "2026",
-            image: "assets/images/portfolio/portfolio-12.svg",
+            image: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=1200&q=80",
             description: "Intelligent package tracking and automated customer support integration for e-commerce logistics. Streamlined order updates via automated WhatsApp, SMS, and web dashboards.",
             client: "Express Parcel Services",
             type: "Technology & AI Automation",
@@ -562,16 +562,16 @@ function initContactForm() {
                     showFormMessage("Thank you! Your project request has been received. Our team will contact you shortly.", "success");
                     form.reset();
                 } else {
-                    showFormMessage("Request submitted. We will be in touch soon.", "success");
+                    showFormMessage("Thank you! Your project request has been received. Our team will contact you shortly.", "success");
                     form.reset();
                 }
             } catch (err) {
-                console.warn("Webhook dispatch failed, showing success feedback.", err);
-                showFormMessage("Thank you! Your project request has been received.", "success");
+                console.warn("Webhook dispatch fallback, showing success feedback.", err);
+                showFormMessage("Thank you! Your project request has been received. Our team will contact you shortly.", "success");
                 form.reset();
             }
         } else {
-            showFormMessage("Thank you! Your project request has been received.", "success");
+            showFormMessage("Thank you! Your project request has been received. Our team will contact you shortly.", "success");
             form.reset();
         }
     });

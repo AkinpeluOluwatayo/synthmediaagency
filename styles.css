@@ -117,16 +117,52 @@ button[type="submit"] *,
 }
 
 /* -- Simple Hand Cursor for Interactive Elements --------------------------- */
-a, button, input, textarea, select, .interactive-hover, .portfolio-item, .filter-btn, .gradient-btn, .gradient-btn-outline, .nav-link, .card-hover, .pillar-card, .whatsapp-float, .yt-play-btn, .yt-wrapper {
+a,
+button,
+input,
+textarea,
+select,
+.interactive-hover,
+.portfolio-item,
+.filter-btn,
+.gradient-btn,
+.gradient-btn-outline,
+.nav-link,
+.card-hover,
+.pillar-card,
+.whatsapp-float,
+.yt-play-btn,
+.yt-wrapper {
   cursor: pointer;
 }
 
 @media (max-width: 1024px),
 (pointer: coarse) {
-  a, button, input, textarea, select, .interactive-hover, .portfolio-item, .filter-btn, .gradient-btn, .gradient-btn-outline, .nav-link, .card-hover, .pillar-card, .whatsapp-float, .yt-play-btn, .yt-wrapper {
+
+  a,
+  button,
+  input,
+  textarea,
+  select,
+  .interactive-hover,
+  .portfolio-item,
+  .filter-btn,
+  .gradient-btn,
+  .gradient-btn-outline,
+  .nav-link,
+  .card-hover,
+  .pillar-card,
+  .whatsapp-float,
+  .yt-play-btn,
+  .yt-wrapper {
     cursor: auto;
   }
-  .gradient-btn, .gradient-btn-outline, .filter-btn, .whatsapp-float, .yt-play-btn {
+
+  .gradient-btn,
+  .gradient-btn-outline,
+  .filter-btn,
+  .whatsapp-float,
+  .yt-play-btn {
     cursor: pointer;
   }
 }
@@ -861,4 +897,80 @@ select:focus {
 
 .footer-social-link:hover {
   color: var(--color-pink) !important;
+}
+
+/* -- Trust Section Cards -------------------------------------------------- */
+.trust-icon-circle {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.trust-card {
+  position: relative;
+  overflow: hidden;
+  transition: var(--transition-smooth);
+}
+
+.trust-card::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 3px;
+  background: var(--gradient-main);
+  transition: width 0.4s ease;
+}
+
+.trust-card:hover::after {
+  width: 100%;
+}
+
+.trust-card:hover {
+  border-color: var(--color-purple) !important;
+  box-shadow: 0 12px 32px rgba(123, 47, 190, 0.10);
+  transform: translateY(-3px);
+}
+
+/* -- Team Section Cards --------------------------------------------------- */
+.team-avatar {
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.team-card {
+  position: relative;
+  overflow: hidden;
+  transition: var(--transition-smooth);
+}
+
+.team-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: var(--gradient-main);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.4s ease;
+}
+
+.team-card:hover::before {
+  transform: scaleX(1);
+}
+
+.team-card:hover {
+  border-color: var(--color-purple) !important;
+  box-shadow: 0 10px 28px rgba(123, 47, 190, 0.10);
+  transform: translateY(-3px);
 }
